@@ -1,0 +1,28 @@
+SWASTHYA SETU DATASET VALIDATION
+================================
+Centers: 12
+Daily reports: 1080
+History per center: 90 days
+Medicines per center: 9
+Diagnostic tests per center: 6
+Redistribution recommendations: 1
+
+Validation checks:
+- Unique center IDs: PASS
+- Non-negative inventory: PASS
+- No divide-by-zero / NaN days_remaining: PASS
+- Bed occupancy <= total beds: PASS
+- Doctors present <= sanctioned doctors: PASS
+- Exactly 90 reports per center: PASS
+- Linked donor/target redistribution: PASS
+
+Intentional demo scenarios:
+- PHC Delang: Paracetamol stock-out risk
+- CHC Pipili: safe surplus donor
+- PHC Kanas: Malaria RDT shortage
+- CHC Nimapara: rising patient surge
+- PHC Brahmagiri: high bed occupancy
+- PHC Krushnaprasad: poor doctor attendance
+- PHC Charichhak: repeated missing reports
+
+Overall: PASS

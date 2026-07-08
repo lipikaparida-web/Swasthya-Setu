@@ -1,0 +1,1252 @@
+export interface TranslationSet {
+  appName: string;
+  ministry: string;
+  navOverview: string;
+  navAiBrief: string;
+  navAnalytics: string;
+  navAllCenters: string;
+  navSettings: string;
+  districtName: string;
+  roleAdmin: string;
+  alertsTitle: string;
+  noAlerts: string;
+  healthScoreTitle: string;
+  healthScoreDesc: string;
+  kpiIndex: string;
+  standardsCompliant: string;
+  reportingCompliance: string;
+  stockRunwayHealth: string;
+  moAttendance: string;
+  bedOccupancyLevel: string;
+  totalCenters: string;
+  reportingToday: string;
+  criticalAlerts: string;
+  bedsOccupied: string;
+  activeTelemetryGaps: string;
+  supplyShortfalls: string;
+  viewAlertFeed: string;
+  smartLogisticsTitle: string;
+  smartLogisticsSub: string;
+  interactiveLogisticsPlan: string;
+  allFacilitiesWellStocked: string;
+  noCriticalDrugDeficiencies: string;
+  redistributeItem: string;
+  from: string;
+  to: string;
+  transferQty: string;
+  executePlan: string;
+  facilityMonitoringDirectory: string;
+  facilitySub: string;
+  searchPlaceholder: string;
+  all: string;
+  status: string;
+  medicalOfficer: string;
+  bedsOccupancy: string;
+  todayPatients: string;
+  activeActionAlert: string;
+  lastSync: string;
+  action: string;
+  inspect: string;
+  allStatus: string;
+  moAbsent: string;
+  moPresent: string;
+  type: string;
+  saveSystemParameters: string;
+  automatedAlertTriggerThresholds: string;
+  lowStockWarningRunway: string;
+  doctorAbsenceAlertCutoff: string;
+  emergencySmsDispatcher: string;
+  smsDispatcherDesc: string;
+  aiRedistributionTitle: string;
+  aiRedistributionDesc: string;
+  hoursAgo: string;
+  daysAgo: string;
+  reportingRate: string;
+  averageOccupancy: string;
+  criticalIssues: string;
+  stockAlerts: string;
+  attendanceGaps: string;
+  telemetryReports: string;
+  complianceRating: string;
+  exportPdf: string;
+  exportExcel: string;
+}
+
+export const languages = [
+  { code: "en", name: "English" },
+  { code: "hi", name: "हिन्दी (Hindi)" },
+  { code: "or", name: "ଓଡ଼ିଆ (Odia)" },
+  { code: "te", name: "తెలుగు (Telugu)" },
+  { code: "mr", name: "मराठी (Marathi)" },
+  { code: "bn", name: "বাংলা (Bengali)" },
+  { code: "ta", name: "தமிழ் (Tamil)" },
+  { code: "kn", name: "ಕನ್ನಡ (Kannada)" },
+  { code: "pa", name: "ਪੰਜਾਬੀ (Punjabi)" },
+  { code: "as", name: "অসমীয়া (Assamese)" }
+];
+
+export const translations: Record<string, TranslationSet> = {
+  en: {
+    appName: "Swasthya Setu",
+    ministry: "Ministry of Health & Family Welfare",
+    navOverview: "District Overview",
+    navAiBrief: "AI District Brief",
+    navAnalytics: "Reports & Analytics",
+    navAllCenters: "All Centers",
+    navSettings: "DHCC Settings",
+    districtName: "Khordha District, Odisha",
+    roleAdmin: "District Administrator",
+    alertsTitle: "Active Command Alerts",
+    noAlerts: "All centers reporting normally.",
+    healthScoreTitle: "District Health Score",
+    healthScoreDesc: "Aggregated live KPI of reporting rate, stock levels, clinical attendance, and bed occupancy.",
+    kpiIndex: "KPI Index",
+    standardsCompliant: "GoI Telemetry Standards Compliant",
+    reportingCompliance: "Reporting Compliance",
+    stockRunwayHealth: "Stock Runway Health",
+    moAttendance: "MO Doctor Attendance",
+    bedOccupancyLevel: "Bed Occupancy Level",
+    totalCenters: "Total Centers",
+    reportingToday: "Reporting Today",
+    criticalAlerts: "Critical Interventions",
+    bedsOccupied: "Bed Occupancy",
+    activeTelemetryGaps: "Active Telemetry Gaps & Critical Outages",
+    supplyShortfalls: "Supply chain shortfalls, prolonged silent facilities, and medical staff vacancies detected.",
+    viewAlertFeed: "View Alert Feed",
+    smartLogisticsTitle: "Smart Logistics & Stock Redistribution Hub",
+    smartLogisticsSub: "AI-driven predictive inter-facility stock transfers to prevent medical outages before they occur",
+    interactiveLogisticsPlan: "Interactive Logistics Plan",
+    allFacilitiesWellStocked: "All Facilities Well-Stocked",
+    noCriticalDrugDeficiencies: "No critical drug deficiencies or redistribution suggestions at this time.",
+    redistributeItem: "Redistribute",
+    from: "From",
+    to: "To",
+    transferQty: "Transfer Qty",
+    executePlan: "Execute Plan",
+    facilityMonitoringDirectory: "Facility Monitoring Directory",
+    facilitySub: "Facility breakdown with daily statistics, logistics stocks, and doctor attendance rates",
+    searchPlaceholder: "Search center...",
+    all: "All",
+    status: "Status",
+    medicalOfficer: "Medical Officer",
+    bedsOccupancy: "Beds Occupancy",
+    todayPatients: "Today Patients",
+    activeActionAlert: "Active Action Alert",
+    lastSync: "Last Sync",
+    action: "Action",
+    inspect: "Inspect",
+    allStatus: "All Status",
+    moAbsent: "MO Absent",
+    moPresent: "MO Present",
+    type: "Type",
+    saveSystemParameters: "Save System Parameters",
+    automatedAlertTriggerThresholds: "Automated Alert Trigger Thresholds",
+    lowStockWarningRunway: "LOW STOCK WARNING RUNWAY",
+    doctorAbsenceAlertCutoff: "DOCTOR ABSENCE ALERT CUTOFF",
+    emergencySmsDispatcher: "Emergency SMS Dispatcher",
+    smsDispatcherDesc: "Automatically dispatch warning SMS notifications to District Medical Officers and Facility Managers when stock runs under 48 hours.",
+    aiRedistributionTitle: "Interactive AI Logistical Redistribution",
+    aiRedistributionDesc: "Identify medical supply surplus centers automatically and suggest inter-facility transfer paths inside the AI Memo.",
+    hoursAgo: "hours ago",
+    daysAgo: "days ago",
+    reportingRate: "Reporting Rate",
+    averageOccupancy: "Average Occupancy",
+    criticalIssues: "Critical Issues",
+    stockAlerts: "Stock Alerts",
+    attendanceGaps: "Attendance Gaps",
+    telemetryReports: "Telemetry Reports",
+    complianceRating: "Compliance Rating",
+    exportPdf: "Export PDF Report",
+    exportExcel: "Export EXCEL Sheet"
+  },
+  hi: {
+    appName: "स्वास्थ्य सेतु",
+    ministry: "स्वास्थ्य एवं परिवार कल्याण मंत्रालय",
+    navOverview: "जिला सिंहावलोकन",
+    navAiBrief: "एआई जिला संक्षिप्त",
+    navAnalytics: "रिपोर्ट और विश्लेषिकी",
+    navAllCenters: "सभी स्वास्थ्य केंद्र",
+    navSettings: "नियंत्रण केंद्र सेटिंग्स",
+    districtName: "खोर्धा जिला, ओडिशा",
+    roleAdmin: "जिला प्रशासक",
+    alertsTitle: "सक्रिय कमान अलर्ट",
+    noAlerts: "सभी केंद्र सामान्य रूप से रिपोर्ट कर रहे हैं।",
+    healthScoreTitle: "जिला स्वास्थ्य स्कोर",
+    healthScoreDesc: "रिपोर्टिंग दर, स्टॉक स्तर, नैदानिक उपस्थिति और बिस्तर अधिभोग का समग्र लाइव केपीआई।",
+    kpiIndex: "केपीआई सूचकांक",
+    standardsCompliant: "भारत सरकार टेलीमेट्री मानकों के अनुरूप",
+    reportingCompliance: "रिपोर्टिंग अनुपालन",
+    stockRunwayHealth: "स्टॉक रनवे स्वास्थ्य",
+    moAttendance: "चिकित्सा अधिकारी उपस्थिति",
+    bedOccupancyLevel: "बिस्तर अधिभोग स्तर",
+    totalCenters: "कुल स्वास्थ्य केंद्र",
+    reportingToday: "आज की रिपोर्टिंग",
+    criticalAlerts: "महत्वपूर्ण हस्तक्षेप",
+    bedsOccupied: "बिस्तर अधिभोग",
+    activeTelemetryGaps: "सक्रिय टेलीमेट्री अंतराल और महत्वपूर्ण आउटेज",
+    supplyShortfalls: "आपूर्ति श्रृंखला की कमी, लंबे समय तक मौन सुविधाएं और चिकित्सा कर्मचारियों की रिक्तियां पाई गईं।",
+    viewAlertFeed: "अलर्ट फ़ीड देखें",
+    smartLogisticsTitle: "स्मार्ट लॉजिस्टिक्स और स्टॉक पुनर्वितरण केंद्र",
+    smartLogisticsSub: "दवा की कमी को रोकने के लिए एआई-संचालित दूरदर्शी अंतर-सुविधा स्टॉक स्थानांतरण",
+    interactiveLogisticsPlan: "इंटरएक्टिव लॉजिस्टिक्स योजना",
+    allFacilitiesWellStocked: "सभी सुविधाएं सुसज्जित हैं",
+    noCriticalDrugDeficiencies: "इस समय कोई महत्वपूर्ण दवा की कमी या पुनर्वितरण सुझाव नहीं है।",
+    redistributeItem: "पुनर्वितरित करें",
+    from: "भेजने वाला",
+    to: "पाने वाला",
+    transferQty: "स्थानांतरण मात्रा",
+    executePlan: "योजना लागू करें",
+    facilityMonitoringDirectory: "सुविधा निगरानी निर्देशिका",
+    facilitySub: "दैनिक आंकड़ों, लॉजिस्टिक्स स्टॉक और डॉक्टर उपस्थिति दरों के साथ सुविधा विवरण",
+    searchPlaceholder: "केंद्र खोजें...",
+    all: "सभी",
+    status: "स्थिति",
+    medicalOfficer: "चिकित्सा अधिकारी",
+    bedsOccupancy: "बिस्तरों का अधिभोग",
+    todayPatients: "आज के मरीज",
+    activeActionAlert: "सक्रिय कार्रवाई अलर्ट",
+    lastSync: "अंतिम सिंक",
+    action: "कार्रवाई",
+    inspect: "निरीक्षण करें",
+    allStatus: "सभी स्थिति",
+    moAbsent: "अनुपस्थित",
+    moPresent: "उपस्थित",
+    type: "प्रकार",
+    saveSystemParameters: "सिस्टम पैरामीटर सहेजें",
+    automatedAlertTriggerThresholds: "स्वचालित अलर्ट ट्रिगर थ्रेसहोल्ड",
+    lowStockWarningRunway: "कम स्टॉक चेतावनी रनवे",
+    doctorAbsenceAlertCutoff: "डॉक्टर अनुपस्थिति अलर्ट कटऑफ",
+    emergencySmsDispatcher: "आपातकालीन एसएमएस प्रेषक",
+    smsDispatcherDesc: "स्टॉक 48 घंटे से कम होने पर जिला चिकित्सा अधिकारियों और सुविधा प्रबंधकों को स्वचालित रूप से चेतावनी एसएमएस भेजें।",
+    aiRedistributionTitle: "इंटरएक्टिव एआई लॉजिस्टिक पुनर्वितरण",
+    aiRedistributionDesc: "चिकित्सा आपूर्ति अधिशेष केंद्रों की पहचान करें और एआई मेमो के भीतर अंतर-सुविधा हस्तांतरण पथ का सुझाव दें।",
+    hoursAgo: "घंटे पहले",
+    daysAgo: "दिन पहले",
+    reportingRate: "रिपोर्टिंग दर",
+    averageOccupancy: "औसत अधिभोग",
+    criticalIssues: "महत्वपूर्ण मुद्दे",
+    stockAlerts: "स्टॉक अलर्ट",
+    attendanceGaps: "उपस्थिति अंतराल",
+    telemetryReports: "टेलीमेट्री रिपोर्ट",
+    complianceRating: "अनुपालन रेटिंग",
+    exportPdf: "पीडीएफ रिपोर्ट निर्यात करें",
+    exportExcel: "एक्सेल शीट निर्यात करें"
+  },
+  or: {
+    appName: "ସ୍ୱାସ୍ଥ୍ୟ ସେତୁ",
+    ministry: "ସ୍ୱାସ୍ଥ୍ୟ ଓ ପରିବାର କଲ୍ୟାଣ ମନ୍ତ୍ରଣାଳୟ",
+    navOverview: "ଜିଲ୍ଲା ସମୀକ୍ଷା",
+    navAiBrief: "AI ଜିଲ୍ଲା ସଂକ୍ଷିପ୍ତ ବିବରଣୀ",
+    navAnalytics: "ରିପୋର୍ଟ ଓ ବିଶ୍ଳେଷଣ",
+    navAllCenters: "ସମସ୍ତ କେନ୍ଦ୍ର",
+    navSettings: "DHCC ସେଟିଙ୍ଗ୍ସ",
+    districtName: "ଖୋର୍ଦ୍ଧା ଜିଲ୍ଲା, ଓଡ଼ିଶା",
+    roleAdmin: "ଜିଲ୍ଲା ପ୍ରଶାସକ",
+    alertsTitle: "ସକ୍ରିୟ କମାଣ୍ଡ ଆଲର୍ଟ",
+    noAlerts: "ସମସ୍ତ କେନ୍ଦ୍ର ସ୍ୱାଭାବିକ ଭାବରେ ରିପୋର୍ଟ କରୁଛନ୍ତି।",
+    healthScoreTitle: "ଜିଲ୍ଲା ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର",
+    healthScoreDesc: "ରିପୋର୍ଟିଂ ହାର, ଷ୍ଟକ୍ ସ୍ତର, ଚିକିତ୍ସକ ଉପସ୍ଥିତି ଏବଂ ଶଯ୍ୟା ବ୍ୟବହାରର ସମୁଦାୟ ସ୍କୋର।",
+    kpiIndex: "KPI ସୂଚକାଙ୍କ",
+    standardsCompliant: "ଭାରତ ସରକାରଙ୍କ ଟେଲିମେଟ୍ରି ମାନକ ସହ ଅନୁପାଳିତ",
+    reportingCompliance: "ରିପୋର୍ଟିଂ ଅନୁପାଳନ",
+    stockRunwayHealth: "ଷ୍ଟକ୍ ରନୱେ ସ୍ୱାସ୍ଥ୍ୟ",
+    moAttendance: "ଚିକିତ୍ସା ଅଧିକାରୀ ଉପସ୍ଥିତି",
+    bedOccupancyLevel: "ଶଯ୍ୟା ବ୍ୟବହାର ସ୍ତର",
+    totalCenters: "ମୋଟ ସ୍ୱାସ୍ଥ୍ୟ କେନ୍ଦ୍ର",
+    reportingToday: "ଆଜିର ରିପୋର୍ଟିଂ",
+    criticalAlerts: "ଜରୁରୀକାଳୀନ ହସ୍ତକ୍ଷେପ",
+    bedsOccupied: "ଶଯ୍ୟା ବ୍ୟବହାର",
+    activeTelemetryGaps: "ସକ୍ରିୟ ଟେଲିମେଟ୍ରି ଅଭାବ ଓ ଜରୁରୀକାଳୀନ ସମସ୍ୟା",
+    supplyShortfalls: "ଷ୍ଟକ୍ ଅଭାବ, ଦୀର୍ଘ ସମୟ ଧରି ରିପୋର୍ଟ କରୁନଥିବା କେନ୍ଦ୍ର ଏବଂ ଡାକ୍ତର ଅନୁପସ୍ଥିତି ଚିହ୍ନଟ ହୋଇଛି।",
+    viewAlertFeed: "ଆଲର୍ଟ ଫିଡ୍ ଦେଖନ୍ତୁ",
+    smartLogisticsTitle: "ସ୍ମାର୍ଟ ଲଜିଷ୍ଟିକ୍ସ ଓ ଷ୍ଟକ୍ ପୁନର୍ବଣ୍ଟନ କେନ୍ଦ୍ର",
+    smartLogisticsSub: "ଦ୍ରବ୍ୟ ଅଭାବ ରୋକିବା ପାଇଁ AI-ଦ୍ୱାରା ପରିଚାଳିତ ପୂର୍ବାନୁମାନ ଭିତ୍ତିକ ଆନ୍ତଃ-କେନ୍ଦ୍ର ଷ୍ଟକ୍ ସ୍ଥାନାନ୍ତର",
+    interactiveLogisticsPlan: "ଇଣ୍ଟରାକ୍ଟିଭ୍ ଲଜିଷ୍ଟିକ୍ସ ଯୋଜନା",
+    allFacilitiesWellStocked: "ସମସ୍ତ କେନ୍ଦ୍ରରେ ପର୍ଯ୍ୟାପ୍ତ ଷ୍ଟକ୍ ରହିଛି",
+    noCriticalDrugDeficiencies: "ଏହି ସମୟରେ କୌଣସି ଜରୁରୀ ଔଷଧର ଅଭାବ କିମ୍ବା ସ୍ଥାନାନ୍ତର ପ୍ରସ୍ତାବ ନାହିଁ।",
+    redistributeItem: "ପୁନର୍ବଣ୍ଟନ କରନ୍ତୁ",
+    from: "ପ୍ରେରକ",
+    to: "ଗ୍ରାହକ",
+    transferQty: "ସ୍ଥାନାନ୍ତର ପରିମାଣ",
+    executePlan: "ଯୋଜନା କାର୍ଯ୍ୟକାରୀ କରନ୍ତୁ",
+    facilityMonitoringDirectory: "କେନ୍ଦ୍ର ସମୀକ୍ଷା ତାଲିକା",
+    facilitySub: "ଦୈନିକ ପରିସଂଖ୍ୟାନ, ଲଜିଷ୍ଟିକ୍ସ ଷ୍ଟକ୍ ଏବଂ ଡାକ୍ତର ଉପସ୍ଥିତି ହାର ସହିତ ସମ୍ପୂର୍ଣ୍ଣ ସୂଚନା",
+    searchPlaceholder: "କେନ୍ଦ୍ର ସନ୍ଧାନ କରନ୍ତୁ...",
+    all: "ସମସ୍ତ",
+    status: "ସ୍ଥିତି",
+    medicalOfficer: "ଚିକିତ୍ସା ଅଧିକାରୀ",
+    bedsOccupancy: "ଶଯ୍ୟା ବ୍ୟବହାର",
+    todayPatients: "ଆଜିର ରୋଗୀ ସଂଖ୍ୟା",
+    activeActionAlert: "ସକ୍ରିୟ କାର୍ଯ୍ୟାନୁଷ୍ଠାନ ଆଲର୍ଟ",
+    lastSync: "ଶେଷ ସିଙ୍କ୍",
+    action: "କାର୍ଯ୍ୟାନୁଷ୍ଠାନ",
+    inspect: "ପରୀକ୍ଷା କରନ୍ତୁ",
+    allStatus: "ସମସ୍ତ ସ୍ଥିତି",
+    moAbsent: "ଅନୁପସ୍ଥିତ",
+    moPresent: "ଉପସ୍ଥିତ",
+    type: "ପ୍ରକାର",
+    saveSystemParameters: "ସିଷ୍ଟମ ପାରାମିଟର ସଂରକ୍ଷଣ କରନ୍ତୁ",
+    automatedAlertTriggerThresholds: "ସ୍ୱୟଂଚାଳିତ ଆଲର୍ଟ ଟ୍ରିଗର ସୀମା",
+    lowStockWarningRunway: "ଷ୍ଟକ୍ ଚେତାବନୀ ସୀମା",
+    doctorAbsenceAlertCutoff: "ଡାକ୍ତର ଅନୁପସ୍ଥିତି ସୀମା",
+    emergencySmsDispatcher: "ଜରୁରୀକାଳୀନ SMS ପ୍ରେରକ",
+    smsDispatcherDesc: "ଷ୍ଟକ୍ ୪୮ ଘଣ୍ଟାରୁ କମ୍ ରହିଲେ ସ୍ୱୟଂଚାଳିତ ଭାବେ ସ୍ୱାସ୍ଥ୍ୟ ଅଧିକାରୀଙ୍କୁ SMS ଚେତାବନୀ ପ୍ରେରଣ କରାଯିବ।",
+    aiRedistributionTitle: "AI ଆନ୍ତଃ-କେନ୍ଦ୍ର ଷ୍ଟକ୍ ସ୍ଥାନାନ୍ତର",
+    aiRedistributionDesc: "ଅଧିକ ଷ୍ଟକ୍ ଥିବା କେନ୍ଦ୍ରଗୁଡ଼ିକୁ ଚିହ୍ନଟ କରି AI ମାଧ୍ୟମରେ ସ୍ଥାନାନ୍ତର ପାଇଁ ପରାମର୍ଶ ଦିଅନ୍ତୁ।",
+    hoursAgo: "ଘଣ୍ଟା ପୂର୍ବେ",
+    daysAgo: "ଦିନ ପୂର୍ବେ",
+    reportingRate: "ରିପୋର୍ଟିଂ ହାର",
+    averageOccupancy: "ହାରାହାରି ଶଯ୍ୟା ବ୍ୟବହାର",
+    criticalIssues: "ଗୁରୁତର ସମସ୍ୟା",
+    stockAlerts: "ଷ୍ଟକ୍ ଆଲର୍ଟ",
+    attendanceGaps: "ଉପସ୍ଥିତି ବ୍ୟବଧାନ",
+    telemetryReports: "ଟେଲିମେଟ୍ରି ରିପୋର୍ଟ",
+    complianceRating: "ଅନୁପାଳନ ମାନ୍ୟତା",
+    exportPdf: "PDF ରିପୋର୍ଟ ଡାଉନଲୋଡ୍",
+    exportExcel: "EXCEL ସିଟ୍ ଡାଉନଲୋଡ୍"
+  },
+  te: {
+    appName: "స్వస్థ్య సేతు",
+    ministry: "ఆరోగ్య మరియు కుటుంబ సంక్షేమ మంత్రిత్వ శాఖ",
+    navOverview: "జిల్లా అవలోకనం",
+    navAiBrief: "AI జిల్లా బ్రీఫ్",
+    navAnalytics: "నివేదికలు & విశ్లేషణలు",
+    navAllCenters: "అన్ని కేంద్రాలు",
+    navSettings: "DHCC సెట్టింగులు",
+    districtName: "ఖోర్ధా జిల్లా, ఒడిశా",
+    roleAdmin: "జిల్లా నిర్వాహకుడు",
+    alertsTitle: "సక్రియ కమాండ్ హెచ్చరికలు",
+    noAlerts: "అన్ని కేంద్రాలు సాధారణంగా రిపోర్ట్ చేస్తున్నాయి.",
+    healthScoreTitle: "జిల్లా ఆరోగ్య స్కోరు",
+    healthScoreDesc: "రిపోర్టింగ్ రేటు, స్టాక్ స్థాయిలు, హాజరు మరియు బెడ్ల ఆక్యుపెన్సీ యొక్క సగటు లైవ్ KPI స్కోరు.",
+    kpiIndex: "KPI సూచీ",
+    standardsCompliant: "భారత ప్రభుత్వం టెలిమెట్రీ ప్రమాణాలకు అనుగుణంగా ఉంది",
+    reportingCompliance: "రిపోర్టింగ్ వర్తింపు",
+    stockRunwayHealth: "స్టాక్ రన్‌వే ఆరోగ్యం",
+    moAttendance: "మెడికల్ ఆఫీసర్ హాజరు",
+    bedOccupancyLevel: "బెడ్ ఆక్యుపెన్సీ స్థాయి",
+    totalCenters: "మొత్తం కేంద్రాలు",
+    reportingToday: "ఈరోజు రిపోర్టింగ్",
+    criticalAlerts: "కీలక జోక్యాలు",
+    bedsOccupied: "బెడ్ల ఆక్యుపెన్సీ",
+    activeTelemetryGaps: "సక్రియ టెలిమెట్రీ అంతరాలు & క్లిష్టమైన సమస్యలు",
+    supplyShortfalls: "సరఫరా కొరత, ఎక్కువ కాలం నిశ్శబ్దంగా ఉన్న కేంద్రాలు మరియు వైద్య సిబ్బంది ఖాళీలు కనుగొనబడ్డాయి.",
+    viewAlertFeed: "అలర్ట్ ఫీడ్‌ను చూడండి",
+    smartLogisticsTitle: "స్మార్ట్ లాజిస్టిక్స్ & స్టాక్ పునఃపంపిణీ కేంద్రం",
+    smartLogisticsSub: "ఔషధ కొరతను నివారించడానికి AI ఆధారిత ముందస్తు కేంద్రాల మధ్య స్టాక్ బదిలీ వ్యవస్థ",
+    interactiveLogisticsPlan: "ఇంటరాక్టివ్ లాజిస్టిక్స్ ప్లాన్",
+    allFacilitiesWellStocked: "అన్ని సౌకర్యాలు బాగా స్టాక్ చేయబడ్డాయి",
+    noCriticalDrugDeficiencies: "ఈ సమయంలో ఎటువంటి కీలకమైన మందుల కొరత లేదా బదిలీ సూచనలు లేవు.",
+    redistributeItem: "పునఃపంపిణీ చేయి",
+    from: "నుండి",
+    to: "కు",
+    transferQty: "బదిలీ పరిమాణం",
+    executePlan: "ప్రణాళిక అమలు చేయి",
+    facilityMonitoringDirectory: "సౌకర్యాల పర్యవేక్షణ డైరెక్టరీ",
+    facilitySub: "రోజువారీ గణాంకాలు, లాజిస్టిక్స్ స్టాక్స్ మరియు డాక్టర్ హాజరు రేట్లతో సౌకర్యాల వివరాలు",
+    searchPlaceholder: "కేంద్రాన్ని శోధించండి...",
+    all: "అన్నీ",
+    status: "స్థితి",
+    medicalOfficer: "మెడికల్ ఆఫీసర్",
+    bedsOccupancy: "బెడ్ల ఆక్యుపెన్సీ",
+    todayPatients: "ఈరోజు రోగులు",
+    activeActionAlert: "సక్రియ చర్య అలర్ట్",
+    lastSync: "చివరి సమకాలీకరణ",
+    action: "చర్య",
+    inspect: "తనిఖీ చేయి",
+    allStatus: "అన్ని స్థితిగతులు",
+    moAbsent: "హాజరు కాలేదు",
+    moPresent: "హాజరయ్యారు",
+    type: "రకం",
+    saveSystemParameters: "సిస్టమ్ పారామితులను సేవ్ చేయి",
+    automatedAlertTriggerThresholds: "ఆటోమేటిక్ అలర్ట్ ట్రిగ్గర్ థ్రెషోల్డ్స్",
+    lowStockWarningRunway: "తక్కువ స్టాక్ హెచ్చరిక రన్‌వే",
+    doctorAbsenceAlertCutoff: "డాక్టర్ హాజరుకాని అలర్ట్ కటాఫ్",
+    emergencySmsDispatcher: "అత్యవసర SMS డిస్పాచర్",
+    smsDispatcherDesc: "స్టాక్ 48 గంటల కంటే తక్కువ ఉన్నప్పుడు జిల్లా వైద్య అధికారులకు మరియు సౌకర్యాల నిర్వాహకులకు స్వయంచాలకంగా SMS పంపబడుతుంది.",
+    aiRedistributionTitle: "ఇంటరాక్టివ్ AI లాజిస్టికల్ పునఃపంపిణీ",
+    aiRedistributionDesc: "మందుల అదనపు నిల్వ ఉన్న కేంద్రాలను గుర్తించి, వాటి బదిలీకి సంబంధించిన మార్గాలను సూచించండి.",
+    hoursAgo: "గంటల క్రితం",
+    daysAgo: "రోజుల క్రితం",
+    reportingRate: "రిపోర్టింగ్ రేటు",
+    averageOccupancy: "సగటు ఆక్యుపెన్సీ",
+    criticalIssues: "కీలక సమస్యలు",
+    stockAlerts: "స్టాక్ అలర్ట్స్",
+    attendanceGaps: "హాజరు అంతరాలు",
+    telemetryReports: "టెలిమెట్రీ నివేదికలు",
+    complianceRating: "వర్తింపు రేటింగ్",
+    exportPdf: "PDF రిపోర్ట్ డౌన్‌లోడ్",
+    exportExcel: "EXCEL షీట్ డౌన్‌లోడ్"
+  },
+  mr: {
+    appName: "स्वास्थ्य सेतु",
+    ministry: "आरोग्य आणि कुटुंब कल्याण मंत्रालय",
+    navOverview: "जिल्हा विहंगावलोकन",
+    navAiBrief: "AI जिल्हा संक्षिप्त वृत्त",
+    navAnalytics: "अहवाल आणि विश्लेषण",
+    navAllCenters: "सर्व केंद्रे",
+    navSettings: "DHCC सेटिंग्ज",
+    districtName: "खोर्धा जिल्हा, ओडिशा",
+    roleAdmin: "जिल्हा प्रशासक",
+    alertsTitle: "सक्रिय कमांड अलर्ट",
+    noAlerts: "सर्व केंद्रे सामान्यपणे अहवाल देत आहेत.",
+    healthScoreTitle: "जिल्हा आरोग्य स्कोअर",
+    healthScoreDesc: "अहवाल दर, स्टॉक पातळी, उपस्थिती आणि खाटांच्या व्यापाराचा एकूण थेट केपीआय.",
+    kpiIndex: "KPI निर्देशांक",
+    standardsCompliant: "भारत सरकार टेलीमेट्री मानकांशी सुसंगत",
+    reportingCompliance: "अहवाल अनुपालन",
+    stockRunwayHealth: "स्टॉक रनवे आरोग्य",
+    moAttendance: "वैद्यकीय अधिकारी उपस्थिती",
+    bedOccupancyLevel: "खाटांच्या व्यापाराची पातळी",
+    totalCenters: "एकूण केंद्रे",
+    reportingToday: "आजचा अहवाल",
+    criticalAlerts: "गंभीर हस्तक्षेप",
+    bedsOccupied: "खाटांची उपलब्धता",
+    activeTelemetryGaps: "सक्रिय टेलीमेट्री त्रुटी आणि गंभीर आउटेज",
+    supplyShortfalls: "पुरवठा साखळीतील तुटवडा, दीर्घकाळ शांत राहिलेली केंद्रे आणि वैद्यकीय कर्मचाऱ्यांची रिक्त पदे आढळली.",
+    viewAlertFeed: "अलर्ट फीड पहा",
+    smartLogisticsTitle: "स्मार्ट लॉजिस्टिक आणि स्टॉक पुनर्वितरण केंद्र",
+    smartLogisticsSub: "औषध टंचाई रोखण्यासाठी एआई-आधारित पूर्वसूचक आंतर-केंद्रीत स्टॉक हस्तांतरण",
+    interactiveLogisticsPlan: "परस्परसंवादी लॉजिस्टिक योजना",
+    allFacilitiesWellStocked: "सर्व सुविधा सुसज्ज आहेत",
+    noCriticalDrugDeficiencies: "यावेळी कोणतीही औषध टंचाई किंवा पुनर्वितरण सूचना नाही.",
+    redistributeItem: "पुनर्वितरित करा",
+    from: "कडून",
+    to: "कडे",
+    transferQty: "हस्तांतरण प्रमाण",
+    executePlan: "योजना कार्यान्वित करा",
+    facilityMonitoringDirectory: "सुविधा नियंत्रण निर्देशिका",
+    facilitySub: "दैनिक आकडेवारी, लॉजिस्टिक स्टॉक आणि डॉक्टर उपस्थिती दरांसह सुविधा तपशील",
+    searchPlaceholder: "केंद्र शोधा...",
+    all: "सर्व",
+    status: "स्थिती",
+    medicalOfficer: "वैद्यकीय अधिकारी",
+    bedsOccupancy: "खाटांची उपलब्धता",
+    todayPatients: "आजचे रुग्ण",
+    activeActionAlert: "सक्रिय कृती अलर्ट",
+    lastSync: "शेवटचे सिंक",
+    action: "कृती",
+    inspect: "तपासणी करा",
+    allStatus: "सर्व स्थिती",
+    moAbsent: "गैरहजर",
+    moPresent: "हजर",
+    type: "प्रकार",
+    saveSystemParameters: "सिस्टम पॅरामीटर्स जतन करा",
+    automatedAlertTriggerThresholds: "स्वयंचलित अलर्ट ट्रिगर मर्यादा",
+    lowStockWarningRunway: "कमी स्टॉक चेतावणी मर्यादा",
+    doctorAbsenceAlertCutoff: "डॉक्टर गैरहजेरी अलर्ट मर्यादा",
+    emergencySmsDispatcher: "तातडीचे एसएमएस प्रेषक",
+    smsDispatcherDesc: "औषध साठा ४८ तासांपेक्षा कमी असल्यास जिल्हा वैद्यकीय अधिकारी आणि सुविधा व्यवस्थापकांना स्वयंचलित चेतावणी एसएमएस पाठवा.",
+    aiRedistributionTitle: "परस्परसंवादी एआय लॉजिस्टिक पुनर्वितरण",
+    aiRedistributionDesc: "अतिरिक्त औषध साठा असलेली केंद्रे ओळखा आणि एआय मेमोमध्ये हस्तांतरण मार्ग सुचवा.",
+    hoursAgo: "तासांपूर्वी",
+    daysAgo: "दिवसांपूर्वी",
+    reportingRate: "अहवाल दर",
+    averageOccupancy: "सरासरी उपलब्धता",
+    criticalIssues: "गंभीर समस्या",
+    stockAlerts: "स्टॉक अलर्ट",
+    attendanceGaps: "उपस्थितीतील त्रुटी",
+    telemetryReports: "टेलीमेट्री अहवाल",
+    complianceRating: "अनुपालन रेटिंग",
+    exportPdf: "PDF अहवाल निर्यात करा",
+    exportExcel: "EXCEL शीट निर्यात करा"
+  },
+  bn: {
+    appName: "স্বাস্থ্য সেতু",
+    ministry: "স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রক",
+    navOverview: "জেলা পর্যালোচনা",
+    navAiBrief: "AI জেলা ব্রিফ",
+    navAnalytics: "রিপোর্ট এবং বিশ্লেষণ",
+    navAllCenters: "সমস্ত কেন্দ্র",
+    navSettings: "DHCC সেটিংস",
+    districtName: "খোর্ধা জেলা, ওড়িশা",
+    roleAdmin: "জেলা প্রশাসক",
+    alertsTitle: "সক্রিয় কমান্ড অ্যালার্ট",
+    noAlerts: "সমস্ত কেন্দ্র স্বাভাবিকভাবে রিপোর্ট করছে।",
+    healthScoreTitle: "জেলা স্বাস্থ্য স্কোর",
+    healthScoreDesc: "রিপোর্টিং হার, স্টক স্তর, উপস্থিতির হার এবং শয্যা ব্যবহারের সামগ্রিক লাইভ কেপিআই স্কোর।",
+    kpiIndex: "KPI সূচক",
+    standardsCompliant: "ভারত সরকারের টেলিমেট্রি মান অনুবর্তী",
+    reportingCompliance: "রিপোর্টিং অনুপালন",
+    stockRunwayHealth: "স্টক রানওয়ে স্বাস্থ্য",
+    moAttendance: "মেডিকেল অফিসার উপস্থিতি",
+    bedOccupancyLevel: "শয্যা ব্যবহারের মাত্রা",
+    totalCenters: "মোট কেন্দ্র সংখ্যা",
+    reportingToday: "আজকের রিপোর্টিং",
+    criticalAlerts: "জরুরী হস্তক্ষেপ",
+    bedsOccupied: "শয্যা ব্যবহার",
+    activeTelemetryGaps: "সক্রিয় টেলিমেট্রি ঘাটতি ও গুরুতর সমস্যা",
+    supplyShortfalls: "সরবরাহ ব্যবস্থার ঘাটতি, দীর্ঘ সময় ধরে রিপোর্ট না করা কেন্দ্র এবং চিকিৎসকদের অনুপস্থিতি সনাক্ত হয়েছে।",
+    viewAlertFeed: "অ্যালার্ট ফিড দেখুন",
+    smartLogisticsTitle: "স্মার্ট লজিস্টিকস ও স্টক পুনরুৎপাদন কেন্দ্র",
+    smartLogisticsSub: "ওষুধের ঘাটতি রোধে এআই-চালিত দূরদর্শী আন্তঃ-কেন্দ্র স্টক স্থানান্তর",
+    interactiveLogisticsPlan: "ইন্টারেক্টিভ লজিস্টিক পরিকল্পনা",
+    allFacilitiesWellStocked: "সমস্ত সুবিধা ভালোভাবে স্টক করা আছে",
+    noCriticalDrugDeficiencies: "এই মুহূর্তে কোনো গুরুতর ওষুধের ঘাটতি বা স্থানান্তরের প্রস্তাব নেই।",
+    redistributeItem: "পুনর্বণ্টন করুন",
+    from: "প্রেরক",
+    to: "প্রাপক",
+    transferQty: "স্থানান্তর পরিমাণ",
+    executePlan: "পরিকল্পনা বাস্তবায়ন",
+    facilityMonitoringDirectory: "সুবিধা পর্যবেক্ষণ তালিকা",
+    facilitySub: "দৈনিক পরিসংখ্যান, লজিস্টিক স্টক এবং চিকিৎসকদের উপস্থিতির হার সহ সম্পূর্ণ তথ্য",
+    searchPlaceholder: "কেন্দ্র খুঁজুন...",
+    all: "সমস্ত",
+    status: "অবস্থা",
+    medicalOfficer: "মেডিকেল অফিসার",
+    bedsOccupancy: "শয্যা ব্যবহার",
+    todayPatients: "আজকের রোগী",
+    activeActionAlert: "সক্রিয় অ্যাকশন অ্যালার্ট",
+    lastSync: "শেষ সিঙ্ক",
+    action: "পদক্ষেপ",
+    inspect: "পরিদর্শন করুন",
+    allStatus: "সমস্ত অবস্থা",
+    moAbsent: "অনুপস্থিত",
+    moPresent: "উপস্থিত",
+    type: "ধরণ",
+    saveSystemParameters: "সিস্টেম প্যারামিটার সংরক্ষণ করুন",
+    automatedAlertTriggerThresholds: "স্বয়ংক্রিয় অ্যালার্ট ট্রিগার সীমা",
+    lowStockWarningRunway: "কম স্টক সতর্কীকরণ সীমা",
+    doctorAbsenceAlertCutoff: "চিকিৎসক অনুপস্থিতি অ্যালার্ট সীমা",
+    emergencySmsDispatcher: "জরুরী এসএমএস প্রেরক",
+    smsDispatcherDesc: "স্টক ৪৮ ঘণ্টার নিচে নেমে গেলে স্বয়ংক্রিয়ভাবে জেলা স্বাস্থ্য কর্মকর্তা ও সুবিধা পরিচালকদের এসএমএস পাঠানো হবে।",
+    aiRedistributionTitle: "ইন্টারেক্টিভ এআই লজিস্টিক পুনর্বণ্টন",
+    aiRedistributionDesc: "অতিরিক্ত ওষুধ থাকা কেন্দ্র সনাক্ত করে এআই মেমোর মাধ্যমে স্থানান্তরের পরামর্শ দিন।",
+    hoursAgo: "ঘণ্টা আগে",
+    daysAgo: "দিন আগে",
+    reportingRate: "রিপোর্টিং হার",
+    averageOccupancy: "গড় শয্যা ব্যবহার",
+    criticalIssues: "গুরুতর সমস্যা",
+    stockAlerts: "স্টক অ্যালার্ট",
+    attendanceGaps: "অনুপস্থিতি ঘাটতি",
+    telemetryReports: "টেলিমেট্রি রিপোর্ট",
+    complianceRating: "অনুপালন রেটিং",
+    exportPdf: "PDF রিপোর্ট ডাউনলোড",
+    exportExcel: "EXCEL শীট ডাউনলোড"
+  },
+  ta: {
+    appName: "ஸ்வஸ்திய சேது",
+    ministry: "சுகாதார மற்றும் குடும்ப நல அமைச்சகம்",
+    navOverview: "மாவட்ட மேலோட்டம்",
+    navAiBrief: "AI மாவட்ட சுருக்கம்",
+    navAnalytics: "அறிக்கைகள் மற்றும் பகுப்பாய்வு",
+    navAllCenters: "அனைத்து மையங்கள்",
+    navSettings: "DHCC அமைப்புகள்",
+    districtName: "கோர்தா மாவட்டம், ஒடிசா",
+    roleAdmin: "மாவட்ட நிர்வாகி",
+    alertsTitle: "செயலில் உள்ள கட்டளை எச்சரிக்கைகள்",
+    noAlerts: "அனைத்து மையங்களும் சாதாரணமாக அறிக்கை செய்கின்றன.",
+    healthScoreTitle: "மாவட்ட சுகாதார மதிப்பீடு",
+    healthScoreDesc: "அறிக்கை விகிதம், இருப்பு நிலைகள், வருகைப்பதிவு மற்றும் படுக்கை பயன்பாடு ஆகியவற்றின் ஒருங்கிணைந்த நேரடி KPI மதிப்பீடு.",
+    kpiIndex: "KPI குறியீடு",
+    standardsCompliant: "இந்திய அரசு டெலிமெட்ரி தரநிலைகளுடன் இணக்கமானது",
+    reportingCompliance: "அறிக்கை இணக்கம்",
+    stockRunwayHealth: "இருப்பு நிலை ஆரோக்கியம்",
+    moAttendance: "மருத்துவ அதிகாரி வருகை",
+    bedOccupancyLevel: "படுக்கை பயன்பாட்டு அளவு",
+    totalCenters: "மொத்த மையங்கள்",
+    reportingToday: "இன்று அறிக்கை செய்தவை",
+    criticalAlerts: "முக்கிய தலையீடுகள்",
+    bedsOccupied: "படுக்கை பயன்பாடு",
+    activeTelemetryGaps: "செயலில் உள்ள டெலிமெட்ரி இடைவெளிகள் & முக்கியமான முடக்கங்கள்",
+    supplyShortfalls: "வழங்கல் பற்றாக்குறை, நீண்ட காலமாக அறிக்கை செய்யாத மையங்கள் மற்றும் மருத்துவப் பணியாளர்கள் காலியிடங்கள் கண்டறியப்பட்டுள்ளன.",
+    viewAlertFeed: "எச்சரிக்கை ஊட்டத்தைக் காண்க",
+    smartLogisticsTitle: "ஸ்மார்ட் லாஜிஸ்டிக்ஸ் & இருப்பு மறுபகிர்வு மையம்",
+    smartLogisticsSub: "மருந்து பற்றாக்குறையைத் தடுக்க AI-ஆல் இயக்கப்படும் முன்கூட்டிய மையங்களுக்கு இடையேயான இருப்பு பரிமாற்றம்",
+    interactiveLogisticsPlan: "ஊடாடும் தளவாடத் திட்டம்",
+    allFacilitiesWellStocked: "அனைத்து மையங்களிலும் போதிய இருப்பு உள்ளது",
+    noCriticalDrugDeficiencies: "இந்த நேரத்தில் முக்கியமான மருந்து பற்றாக்குறையோ அல்லது மறுபகிர்வு பரிந்துரைகளோ இல்லை.",
+    redistributeItem: "மறுபகிர்வு செய்",
+    from: "இருந்து",
+    to: "பெறுநர்",
+    transferQty: "பரிமாற்ற அளவு",
+    executePlan: "திட்டத்தைச் செயல்படுத்து",
+    facilityMonitoringDirectory: "மையங்கள் கண்காணிப்பு அடைவு",
+    facilitySub: "தினசரி புள்ளிவிவரங்கள், தளவாட இருப்புகள் மற்றும் மருத்துவர் வருகை விகிதங்களுடன் மையங்களின் விவரங்கள்",
+    searchPlaceholder: "மையத்தைத் தேடுக...",
+    all: "அனைத்தும்",
+    status: "நிலை",
+    medicalOfficer: "மருத்துவ அதிகாரி",
+    bedsOccupancy: "படுக்கைகள் பயன்பாடு",
+    todayPatients: "இன்றைய நோயாளிகள்",
+    activeActionAlert: "செயலில் உள்ள நடவடிக்கை எச்சரிக்கை",
+    lastSync: "கடைசி ஒத்திசைவு",
+    action: "நடவடிக்கை",
+    inspect: "ஆய்வு செய்",
+    allStatus: "அனைத்து நிலைகளும்",
+    moAbsent: "வருகை தரவில்லை",
+    moPresent: "வருகை தந்துள்ளார்",
+    type: "வகை",
+    saveSystemParameters: "அமைப்பு அளவுருக்களைச் சேமி",
+    automatedAlertTriggerThresholds: "தானியங்கி எச்சரிக்கை வரம்புகள்",
+    lowStockWarningRunway: "குறைந்த இருப்பு எச்சரிக்கை வரம்பு",
+    doctorAbsenceAlertCutoff: "மருத்துவர் வருகை தரா எச்சரிக்கை வரம்பு",
+    emergencySmsDispatcher: "அவசர எஸ்எம்எஸ் அனுப்பீடு",
+    smsDispatcherDesc: "மருந்து இருப்பு 48 மணி நேரத்திற்குக் குறைவாக இருக்கும்போது மாவட்ட சுகாதார அதிகாரிகள் மற்றும் மைய மேலாளர்களுக்குத் தானாகவே எச்சரிக்கை எஸ்எம்எஸ் அனுப்பப்படும்.",
+    aiRedistributionTitle: "ஊடாடும் AI தளவாட மறுபகிர்வு",
+    aiRedistributionDesc: "கூடுதல் இருப்பு உள்ள மையங்களைக் கண்டறிந்து, AI குறிப்பிற்குள் மையங்களுக்கு இடையேயான பரிமாற்ற வழிகளைப் பரிந்துரைக்கவும்.",
+    hoursAgo: "மணிநேரத்திற்கு முன்பு",
+    daysAgo: "நாட்களுக்கு முன்பு",
+    reportingRate: "அறிக்கை விகிதம்",
+    averageOccupancy: "சராசரி பயன்பாடு",
+    criticalIssues: "முக்கியமான பிரச்சனைகள்",
+    stockAlerts: "இருப்பு எச்சரிக்கைகள்",
+    attendanceGaps: "வருகைப்பதிவு இடைவெளிகள்",
+    telemetryReports: "டெலிமெட்ரி அறிக்கைகள்",
+    complianceRating: "இணக்க மதிப்பீடு",
+    exportPdf: "PDF அறிக்கை பதிவிறக்கு",
+    exportExcel: "EXCEL தாள் பதிவிறக்கு"
+  },
+  kn: {
+    appName: "ಸ್ವಸ್ಥ್ಯ ಸೇತು",
+    ministry: "ಆರೋಗ್ಯ ಮತ್ತು ಕುಟುಂಬ ಕಲ್ಯಾಣ ಸಚಿವಾಲಯ",
+    navOverview: "ಜಿಲ್ಲಾ ಅವಲೋಕನ",
+    navAiBrief: "AI ಜಿಲ್ಲಾ ವಿವರಣೆ",
+    navAnalytics: "ವರದಿಗಳು ಮತ್ತು ವಿಶ್ಲೇಷಣೆ",
+    navAllCenters: "ಎಲ್ಲಾ ಕೇಂದ್ರಗಳು",
+    navSettings: "DHCC ಸೆಟ್ಟಿಂಗ್ಗಳು",
+    districtName: "ಖೋರ್ಧಾ ಜಿಲ್ಲೆ, ಒಡಿಶಾ",
+    roleAdmin: "ಜಿಲ್ಲಾ ಆಡಳಿತಾಧಿಕಾರಿ",
+    alertsTitle: "ಸಕ್ರಿಯ ಕಮಾಂಡ್ ಎಚ್ಚರಿಕೆಗಳು",
+    noAlerts: "ಎಲ್ಲಾ ಕೇಂದ್ರಗಳು ಸಾಮಾನ್ಯವಾಗಿ ವರದಿ ಮಾಡುತ್ತಿವೆ.",
+    healthScoreTitle: "ಜಿಲ್ಲಾ ಆರೋಗ್ಯ ಸ್ಕೋರ್",
+    healthScoreDesc: "ವರದಿ ಮಾಡುವ ದರ, ಸ್ಟಾಕ್ ಮಟ್ಟಗಳು, ಹಾಜರಾತಿ ಮತ್ತು ಬೆಡ್‌ಗಳ ಆಕ್ಯುಪೆನ್ಸಿಯ ಲೈವ್ KPI ಸ್ಕೋರ್.",
+    kpiIndex: "KPI ಸೂಚ್ಯಂಕ",
+    standardsCompliant: "ಭಾರತ ಸರ್ಕಾರದ ಟೆಲಿಮೆಟ್ರಿ ಮಾನದಂಡಗಳಿಗೆ ಅನುಗುಣವಾಗಿದೆ",
+    reportingCompliance: "ವರದಿ ಮಾಡುವ ಅನುಸರಣೆ",
+    stockRunwayHealth: "ಸ್ಟಾಕ್ ರನ್‌ವೇ ಆರೋಗ್ಯ",
+    moAttendance: "ವೈದ್ಯಾಧಿಕಾರಿ ಹಾಜರಾತಿ",
+    bedOccupancyLevel: "ಬೆಡ್ ಆಕ್ಯುಪೆನ್ಸಿ ಮಟ್ಟ",
+    totalCenters: "ಒಟ್ಟು ಕೇಂದ್ರಗಳು",
+    reportingToday: "ಇಂದಿನ ವರದಿ ಮಾಡುವಿಕೆ",
+    criticalAlerts: "ನಿರ್ಣಾಯಕ ಮಧ್ಯಸ್ಥಿಕೆಗಳು",
+    bedsOccupied: "ಬೆಡ್ ಆಕ್ಯುಪೆನ್ಸಿ",
+    activeTelemetryGaps: "ಸಕ್ರಿಯ ಟೆಲಿಮೆಟ್ರಿ ಕೊರತೆಗಳು ಮತ್ತು ನಿರ್ಣಾಯಕ ಸಮಸ್ಯೆಗಳು",
+    supplyShortfalls: "ಪೂರೈಕೆ ಕೊರತೆ, ವರದಿ ಮಾಡದ ಕೇಂದ್ರಗಳು ಮತ್ತು ವೈದ್ಯಕೀಯ ಸಿಬ್ಬಂದಿ ಕೊರತೆ ಪತ್ತೆಯಾಗಿದೆ.",
+    viewAlertFeed: "ಎಚ್ಚರಿಕೆ ಫೀಡ್ ವೀಕ್ಷಿಸಿ",
+    smartLogisticsTitle: "ಸ್ಮಾರ್ಟ್ ಲಾಜಿಸ್ಟಿಕ್ಸ್ ಮತ್ತು ಸ್ಟಾಕ್ ಮರುಹಂಚಿಕೆ ಕೇಂದ್ರ",
+    smartLogisticsSub: "ಔಷಧ ಕೊರತೆ ತಡೆಗಟ್ಟಲು AI ಆಧಾರಿತ ಮುನ್ಸೂಚಕ ಕೇಂದ್ರಗಳ ನಡುವಿನ ಸ್ಟಾಕ್ ವರ್ಗಾವಣೆ",
+    interactiveLogisticsPlan: "ಸಂವಾದಾತ್ಮಕ ಲಾಜಿಸ್ಟಿಕ್ಸ್ ಯೋಜನೆ",
+    allFacilitiesWellStocked: "ಎಲ್ಲಾ ಕೇಂದ್ರಗಳಲ್ಲಿ ಉತ್ತಮ ಸ್ಟಾಕ್ ಇದೆ",
+    noCriticalDrugDeficiencies: "ಈ ಸಮಯದಲ್ಲಿ ಯಾವುದೇ ನಿರ್ಣಾಯಕ ಔಷಧ ಕೊರತೆ ಅಥವಾ ವರ್ಗಾವಣೆ ಸಲಹೆಗಳಿಲ್ಲ.",
+    redistributeItem: "ಮರುಹಂಚಿಕೆ ಮಾಡಿ",
+    from: "ಇಂದ",
+    to: "ಗೆ",
+    transferQty: "ವರ್ಗಾವಣೆ ಪ್ರಮಾಣ",
+    executePlan: "ಯೋಜನೆ ಅನುಷ್ಠಾನಗೊಳಿಸಿ",
+    facilityMonitoringDirectory: "ಕೇಂದ್ರಗಳ ಮೇಲ್ವಿಚಾರಣಾ ಡೈರೆಕ್ಟರಿ",
+    facilitySub: "ದೈನಂದಿನ ಅಂಕಿಅಂಶಗಳು, ಲಾಜಿಸ್ಟಿಕ್ಸ್ ಸ್ಟಾಕ್ ಮತ್ತು ವೈದ್ಯರ ಹಾಜರಾತಿಯೊಂದಿಗೆ ಕೇಂದ್ರಗಳ ವಿವರಗಳು",
+    searchPlaceholder: "ಕೇಂದ್ರವನ್ನು ಹುಡುಕಿ...",
+    all: "ಎಲ್ಲಾ",
+    status: "ಸ್ಥಿತಿ",
+    medicalOfficer: "ವೈದ್ಯಾಧಿಕಾರಿ",
+    bedsOccupancy: "ಬೆಡ್ ಆಕ್ಯುಪೆನ್ಸಿ",
+    todayPatients: "ಇಂದಿನ ರೋಗಿಗಳು",
+    activeActionAlert: "ಸಕ್ರಿಯ ಕ್ರಮ ಎಚ್ಚರಿಕೆ",
+    lastSync: "ಕೊನೆಯ ಸಿಂಕ್",
+    action: "ಕ್ರಮ",
+    inspect: "ಪರಿಶೀಲಿಸಿ",
+    allStatus: "ಎಲ್ಲಾ ಸ್ಥಿತಿ",
+    moAbsent: "ಗೈರುಹಾಜರು",
+    moPresent: "ಹಾಜರಿದ್ದಾರೆ",
+    type: "ಮಾದರಿ",
+    saveSystemParameters: "ಸಿಸ್ಟಮ್ ನಿಯತಾಂಕಗಳನ್ನು ಉಳಿಸಿ",
+    automatedAlertTriggerThresholds: "ಸ್ವಯಂಚಾಲಿತ ಎಚ್ಚರಿಕೆ ಮಿತಿಗಳು",
+    lowStockWarningRunway: "ಕಡಿಮೆ ಸ್ಟಾಕ್ ಎಚ್ಚರಿಕೆ ಮಿತಿ",
+    doctorAbsenceAlertCutoff: "ವೈದ್ಯರ ಗೈರುಹಾಜರಿ ಎಚ್ಚರಿಕೆ ಮಿತಿ",
+    emergencySmsDispatcher: "ತುರ್ತು SMS ರವಾನೆದಾರ",
+    smsDispatcherDesc: "ಔಷಧ ಸ್ಟಾಕ್ 48 ಗಂಟೆಗಳಿಗಿಂತ ಕಡಿಮೆಯಿದ್ದಾಗ ಜಿಲ್ಲಾ ವೈದ್ಯಾಧಿಕಾರಿಗಳಿಗೆ ಮತ್ತು ಕೇಂದ್ರದ ವ್ಯವಸ್ಥಾಪಕರಿಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಎಚ್ಚರಿಕೆ SMS ಕಳುಹಿಸಲಾಗುತ್ತದೆ.",
+    aiRedistributionTitle: "ಸಂವಾದಾತ್ಮಕ AI ಲಾಜಿಸ್ಟಿಕಲ್ ಮರುಹಂಚಿಕೆ",
+    aiRedistributionDesc: "ಹೆಚ್ಚುವರಿ ಸ್ಟಾಕ್ ಇರುವ ಕೇಂದ್ರಗಳನ್ನು ಗುರುತಿಸಿ ಮತ್ತು ವರ್ಗಾವಣೆ ಮಾರ್ಗಗಳನ್ನು ಸೂಚಿಸಿ.",
+    hoursAgo: "ಗಂಟೆಗಳ ಹಿಂದೆ",
+    daysAgo: "ದಿನಗಳ ಹಿಂದೆ",
+    reportingRate: "ವರದಿ ದರ",
+    averageOccupancy: "ಸರಾಸರಿ ಆಕ್ಯುಪೆನ್ಸಿ",
+    criticalIssues: "ನಿರ್ಣಾಯಕ ಸಮಸ್ಯೆಗಳು",
+    stockAlerts: "ಸ್ಟಾಕ್ ಎಚ್ಚರಿಕೆಗಳು",
+    attendanceGaps: "ಹಾಜರಾತಿ ಕೊರತೆಗಳು",
+    telemetryReports: "ಟೆಲಿಮೆಟ್ರಿ ವರದಿಗಳು",
+    complianceRating: "ಅನುಸರಣೆ ರೇಟಿಂಗ್",
+    exportPdf: "PDF ವರದಿ ಡೌನ್‌ಲೋಡ್",
+    exportExcel: "EXCEL ಶೀಟ್ ಡೌನ್‌ಲೋಡ್"
+  },
+  pa: {
+    appName: "ਸਵਾਸਥਿਆ ਸੇਤੂ",
+    ministry: "ਸਿਹਤ ਅਤੇ ਪਰਿਵਾਰ ਭਲਾਈ ਮੰਤਰਾਲਾ",
+    navOverview: "ਜ਼ਿਲ੍ਹਾ ਸੰਖੇਪ",
+    navAiBrief: "AI ਜ਼ਿਲ੍ਹਾ ਸੰਖੇਪ",
+    navAnalytics: "ਰਿਪੋਰਟਾਂ ਅਤੇ ਵਿਸ਼ਲੇਸ਼ਣ",
+    navAllCenters: "ਸਾਰੇ ਕੇਂਦਰ",
+    navSettings: "DHCC ਸੈਟਿੰਗਾਂ",
+    districtName: "ਖੋਰਧਾ ਜ਼ਿਲ੍ਹਾ, ਉੜੀਸਾ",
+    roleAdmin: "ਜ਼ਿਲ੍ਹਾ ਪ੍ਰਸ਼ਾਸਕ",
+    alertsTitle: "ਸਕ੍ਰਿਅ ਕਮਾਂਡ ਅਲਰਟ",
+    noAlerts: "ਸਾਰੇ ਕੇਂਦਰ ਆਮ ਵਾਂਗ ਰਿਪੋਰਟ ਕਰ ਰਹੇ ਹਨ।",
+    healthScoreTitle: "ਜ਼ਿਲ੍ਹਾ ਸਿਹਤ ਸਕੋਰ",
+    healthScoreDesc: "ਰਿਪੋਰਟਿੰਗ ਦਰ, ਸਟਾਕ ਪੱਧਰ, ਹਾਜ਼ਰੀ ਅਤੇ ਬਿਸਤਰਿਆਂ ਦੀ ਵਰਤੋਂ ਦਾ ਕੁੱਲ ਲਾਈਵ KPI ਸਕੋਰ।",
+    kpiIndex: "KPI ਸੂਚਕਾਂਕ",
+    standardsCompliant: "ਭਾਰਤ ਸਰਕਾਰ ਟੈਲੀਮੈਟਰੀ ਮਿਆਰਾਂ ਦੇ ਅਨੁਕੂਲ",
+    reportingCompliance: "ਰਿਪੋਰਟਿੰਗ ਪਾਲਣਾ",
+    stockRunwayHealth: "ਸਟਾਕ ਰਨਵੇ ਸਿਹਤ",
+    moAttendance: "ਮੈਡੀਕਲ ਅਫਸਰ ਹਾਜ਼ਰੀ",
+    bedOccupancyLevel: "ਬਿਸਤਰਿਆਂ ਦੀ ਵਰਤੋਂ ਦਾ ਪੱਧਰ",
+    totalCenters: "ਕੁੱਲ ਕੇਂਦਰ",
+    reportingToday: "ਅੱਜ ਦੀ ਰਿਪੋਰਟਿੰਗ",
+    criticalAlerts: "ਗੰਭੀਰ ਦਖਲਅੰਦਾਜ਼ੀ",
+    bedsOccupied: "ਬਿਸਤਰਿਆਂ ਦੀ ਵਰਤੋਂ",
+    activeTelemetryGaps: "ਸਕ੍ਰਿਅ ਟੈਲੀਮੈਟਰੀ ਅੰਤਰ ਅਤੇ ਗੰਭੀਰ ਸਮੱਸਿਆਵਾਂ",
+    supplyShortfalls: "ਸਪਲਾਈ ਦੀ ਘਾਟ, ਲੰਬੇ ਸਮੇਂ ਤੋਂ ਰਿਪੋਰਟ ਨਾ ਕਰਨ ਵਾਲੇ ਕੇਂਦਰ ਅਤੇ ਡਾਕਟਰਾਂ ਦੀ ਗੈਰ-ਹਾਜ਼ਰੀ ਪਾਈ ਗਈ ਹੈ।",
+    viewAlertFeed: "ਅਲਰਟ ਫੀਡ ਦੇਖੋ",
+    smartLogisticsTitle: "ਸਮਾਰਟ ਲੌਜਿਸਟਿਕਸ ਅਤੇ ਸਟਾਕ ਮੁੜ-ਵੰਡ ਕੇਂਦਰ",
+    smartLogisticsSub: "ਦਵਾਈਆਂ ਦੀ ਕਮੀ ਨੂੰ ਰੋਕਣ ਲਈ AI-ਅਧਾਰਿਤ ਅੰਤਰ-ਕੇਂਦਰ ਸਟਾਕ ਟ੍ਰਾਂਸਫਰ ਪ੍ਰਣਾਲੀ",
+    interactiveLogisticsPlan: "ਇੰਟਰਐਕਟਿਵ ਲੌਜਿਸਟਿਕਸ ਯੋਜਨਾ",
+    allFacilitiesWellStocked: "ਸਾਰੀਆਂ ਸਹੂਲਤਾਂ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਟਾਕ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ",
+    noCriticalDrugDeficiencies: "ਇਸ ਸਮੇਂ ਕੋਈ ਦਵਾਈ ਦੀ ਕਮੀ ਜਾਂ ਟ੍ਰਾਂਸਫਰ ਸੁਝਾਅ ਨਹੀਂ ਹੈ।",
+    redistributeItem: "ਮੁੜ-ਵੰਡ ਕਰੋ",
+    from: "ਵੱਲੋਂ",
+    to: "ਵੱਲ",
+    transferQty: "ਟ੍ਰਾਂਸਫਰ ਮਾਤਰਾ",
+    executePlan: "ਯੋਜਨਾ ਲਾਗੂ ਕਰੋ",
+    facilityMonitoringDirectory: "ਕੇਂਦਰ ਨਿਗਰਾਨੀ ਡਾਇਰੈਕਟਰੀ",
+    facilitySub: "ਰੋਜ਼ਾਨਾ ਅੰਕੜਿਆਂ, ਲੌਜਿਸਟਿਕਸ ਸਟਾਕ ਅਤੇ ਡਾਕਟਰ ਹਾਜ਼ਰੀ ਦਰਾਂ ਨਾਲ ਕੇਂਦਰਾਂ ਦਾ ਵੇਰਵਾ",
+    searchPlaceholder: "ਕੇਂਦਰ ਲੱਭੋ...",
+    all: "ਸਾਰੇ",
+    status: "ਸਥਿਤੀ",
+    medicalOfficer: "ਮੈਡੀਕਲ ਅਫਸਰ",
+    bedsOccupancy: "ਬਿਸਤਰਿਆਂ ਦੀ ਵਰਤੋਂ",
+    todayPatients: "ਅੱਜ ਦੇ ਮਰੀਜ਼",
+    activeActionAlert: "ਸਕ੍ਰਿਅ ਕਾਰਵਾਈ ਅਲਰਟ",
+    lastSync: "ਆਖਰੀ ਸਿੰਕ",
+    action: "ਕਾਰਵਾਈ",
+    inspect: "ਨਿਰੀਖਣ ਕਰੋ",
+    allStatus: "ਸਾਰੀ ਸਥਿਤੀ",
+    moAbsent: "ਗੈਰ-ਹਾਜ਼ਰ",
+    moPresent: "ਹਾਜ਼ਰ",
+    type: "ਕਿਸਮ",
+    saveSystemParameters: "ਸਿਸਟਮ ਪੈਰਾਮੀਟਰ ਸੁਰੱਖਿਅਤ ਕਰੋ",
+    automatedAlertTriggerThresholds: "ਸਵੈਚਾਲਿਤ ਅਲਰਟ ਟ੍ਰਿਗਰ ਸੀਮਾਵਾਂ",
+    lowStockWarningRunway: "ਘੱਟ ਸਟਾਕ ਚੇਤਾਵਨੀ ਸੀਮਾ",
+    doctorAbsenceAlertCutoff: "ਡਾਕਟਰ ਗੈਰ-ਹਾਜ਼ਰੀ ਅਲਰਟ ਸੀਮਾ",
+    emergencySmsDispatcher: "ਐਮਰਜੈਂਸੀ SMS ਭੇਜਣ ਵਾਲਾ",
+    smsDispatcherDesc: "ਸਟਾਕ 48 ਘੰਟਿਆਂ ਤੋਂ ਘੱਟ ਹੋਣ 'ਤੇ ਜ਼ਿਲ੍ਹਾ ਸਿਹਤ ਅਧਿਕਾਰੀਆਂ ਅਤੇ ਕੇਂਦਰ ਪ੍ਰਬੰਧਕਾਂ ਨੂੰ ਸਵੈਚਾਲਿਤ ਚੇਤਾਵਨੀ SMS ਭੇਜਿਆ ਜਾਵੇਗਾ।",
+    aiRedistributionTitle: "ਇੰਟਰਐਕਟਿਵ AI ਲੌਜਿਸਟਿਕ ਮੁੜ-ਵੰਡ",
+    aiRedistributionDesc: "ਵਾਧੂ ਸਟਾਕ ਵਾਲੇ ਕੇਂਦਰਾਂ ਦੀ ਪਛਾਣ ਕਰੋ ਅਤੇ ਟ੍ਰਾਂਸਫਰ ਮਾਰਗਾਂ ਦੇ ਸੁਝਾਅ ਦਿਓ।",
+    hoursAgo: "ਘੰਟੇ ਪਹਿਲਾਂ",
+    daysAgo: "ਦਿਨ ਪਹਿਲਾਂ",
+    reportingRate: "ਰਿਪੋਰਟਿੰਗ ਦਰ",
+    averageOccupancy: "ਔਸਤ ਵਰਤੋਂ",
+    criticalIssues: "ਗੰਭੀर ਮੁੱਦੇ",
+    stockAlerts: "ਸਟਾਕ ਅਲਰਟ",
+    attendanceGaps: "ਹਾਜ਼ਰੀ ਅੰਤਰ",
+    telemetryReports: "ਟੈਲੀਮੈਟਰੀ ਰਿਪੋਰਟਾਂ",
+    complianceRating: "ਪਾਲਣਾ ਰੇਟਿੰਗ",
+    exportPdf: "PDF ਰਿਪੋਰਟ ਡਾਊਨਲੋਡ",
+    exportExcel: "EXCEL ਸ਼ੀਟ ਡਾਊਨਲੋਡ"
+  },
+  as: {
+    appName: "স্বাস্থ্য সেতু",
+    ministry: "স্বাস্থ্য আৰু পৰিয়াল কল্যাণ মন্ত্ৰালয়",
+    navOverview: "জিলা বুৰণ",
+    navAiBrief: "AI জিলা ব্ৰীফ",
+    navAnalytics: "প্ৰতিবেদন আৰু বিশ্লেষণ",
+    navAllCenters: "সকলো কেন্দ্ৰ",
+    navSettings: "DHCC ছেটিংছ",
+    districtName: "খোর্ধা জিলা, ওড়িশা",
+    roleAdmin: "জিলা প্ৰশাসক",
+    alertsTitle: "সক্ৰিয় কমাণ্ড এলাৰ্ট",
+    noAlerts: "সকলো কেন্দ্ৰই স্বাভাৱিকভাৱে প্ৰতিবেদন দাখিল কৰিছে।",
+    healthScoreTitle: "জিলা স্বাস্থ্য স্কোৰ",
+    healthScoreDesc: "প্ৰতিবেদনৰ হাৰ, স্টকৰ স্তৰ, উপস্থিতি আৰু শয্যা ব্যৱহাৰৰ সামগ্ৰিক লাইভ কেপিআই স্কোৰ।",
+    kpiIndex: "KPI সূচক",
+    standardsCompliant: "ভাৰত চৰকাৰৰ টেলিমেট্ৰী মানদণ্ডৰ সৈতে অনুপালিত",
+    reportingCompliance: "প্ৰতিবেদন অনুপালন",
+    stockRunwayHealth: "স্টক ৰানৱে স্বাস্থ্য",
+    moAttendance: "চিকিৎসা বিষয়াৰ উপস্থিতি",
+    bedOccupancyLevel: "শয্যা ব্যৱহাৰৰ মাত্ৰা",
+    totalCenters: "মুঠ কেন্দ্ৰ",
+    reportingToday: "আজিৰ প্ৰতিবেদন",
+    criticalAlerts: "জৰুৰীকালীন হস্তক্ষেপ",
+    bedsOccupied: "শয্যা ব্যৱহাৰ",
+    activeTelemetryGaps: "সক্ৰিয় টেলিমেট্ৰী অভাৱ আৰু গুৰুতৰ সমস্যাসমূহ",
+    supplyShortfalls: "যোগানৰ অভাৱ, দীৰ্ঘদিন ধৰি ৰিপোৰ্ট নকৰা কেন্দ্ৰ আৰু চিকিৎসকৰ অনুপস্থিতি ধৰা পৰিছে।",
+    viewAlertFeed: "এলাৰ্ট ফীড চাওক",
+    smartLogisticsTitle: "স্মাৰ্ট লজিষ্টিক আৰু স্টক পুনৰ বিতৰণ কেন্দ্ৰ",
+    smartLogisticsSub: "ঔষধৰ অভাৱ ৰোধ কৰিবলৈ এআই-চালিত পূৰ্বানুমান ভিত্তিক আন্তঃ-কেন্দ্ৰ স্টক স্থানান্তৰ",
+    interactiveLogisticsPlan: "ইণ্টাৰেক্টিভ লজিষ্টিক পৰিকল্পনা",
+    allFacilitiesWellStocked: "সকলো কেন্দ্ৰতে পৰ্যাপ্ত স্টক আছে",
+    noCriticalDrugDeficiencies: "এই সময়ত কোনো গুৰুতৰ ঔষধৰ অভাৱ বা স্থানান্তৰৰ পৰামৰ্শ নাই।",
+    redistributeItem: "পুনৰ বিতৰণ কৰক",
+    from: "প্ৰেৰক",
+    to: "প্ৰাপক",
+    transferQty: "স্থানান্তৰ পৰিমাণ",
+    executePlan: "পৰিকল্পনা কাৰ্যকৰী কৰক",
+    facilityMonitoringDirectory: "কেন্দ্ৰ নিৰীক্ষণ তালিকা",
+    facilitySub: "দৈনিক পৰিসংখ্যা, লজিষ্টিক স্টক আৰু চিকিৎসকৰ উপস্থিতিৰ সৈতে কেন্দ্ৰসমূহৰ বিৱৰণ",
+    searchPlaceholder: "কেন্দ্ৰ সন্ধান কৰক...",
+    all: "সকলো",
+    status: "স্থিতি",
+    medicalOfficer: "চিকিৎসা বিষয়া",
+    bedsOccupancy: "শয্যা ব্যৱহাৰ",
+    todayPatients: "আজিৰ ৰোগী",
+    activeActionAlert: "সক্ৰিয় একচন এলাৰ্ট",
+    lastSync: "শেষ চিঙ্ক",
+    action: "পদক্ষেপ",
+    inspect: "পৰীক্ষা কৰক",
+    allStatus: "সকলো স্থিতি",
+    moAbsent: "অনুপস্থিত",
+    moPresent: "উপস্থিত",
+    type: "প্ৰকাৰ",
+    saveSystemParameters: "ছিষ্টেম পেৰামিটাৰ সংৰক্ষণ কৰক",
+    automatedAlertTriggerThresholds: "স্বয়ংক্ৰিয় এলাৰ্ট ট্ৰিগাৰ সীমা",
+    lowStockWarningRunway: "কম স্টক সতর্কীকৰণ সীমা",
+    doctorAbsenceAlertCutoff: "চিকিৎসক অনুপস্থিতি এলাৰ্ট সীমা",
+    emergencySmsDispatcher: "জৰুৰীকালীন এছএমএছ প্ৰেৰক",
+    smsDispatcherDesc: "স্টক ৪৮ ঘণ্টাতকৈ কম হ’লে স্বয়ংক্ৰিয়ভাৱে জিলা স্বাস্থ্য বিষয়া আৰু কেন্দ্ৰ পৰিচালকক এছএমএছ সতৰ্কবাণী প্ৰেৰণ কৰা হ’ব।",
+    aiRedistributionTitle: "ইণ্টাৰেক্টিভ এআই লজিষ্টিক পুনৰ বিতৰণ",
+    aiRedistributionDesc: "অতিৰিক্ত ঔষধ থকা কেন্দ্ৰসমূহ চিনাক্ত কৰি এআই মেমোৰ জৰিয়তে স্থানান্তৰৰ পৰামৰ্শ দিয়ক।",
+    hoursAgo: "ঘণ্টা পূৰ্বে",
+    daysAgo: "দিন পূৰ্বে",
+    reportingRate: "প্ৰতিবেদনৰ হাৰ",
+    averageOccupancy: "গড় শয্যা ব্যৱহাৰ",
+    criticalIssues: "গুৰুতৰ সমস্যাসমূহ",
+    stockAlerts: "স্টক এলাৰ্ট",
+    attendanceGaps: "অনুপস্থিতিৰ ব্যৱধান",
+    telemetryReports: "টেলিমেট্ৰী প্ৰতিবেদন",
+    complianceRating: "অনুপালন ৰেটিং",
+    exportPdf: "PDF প্ৰতিবেদন ডাউনলোড",
+    exportExcel: "EXCEL শ্বীট ডাউনলোড"
+  }
+};
+
+// Map of Center names across all 10 supported languages
+const centerTranslations: Record<string, Record<string, string>> = {
+  "PHC Bhubaneswar North": {
+    hi: "पीएचसी भुवनेश्वर उत्तर",
+    or: "ପିଏଚସି ଭୁବନେଶ୍ୱର ଉତ୍ତର",
+    te: "పిహెచ్‌సి భువనేశ్వర్ ఉత్తర",
+    mr: "पीएचसी भुवनेश्वर उत्तर",
+    bn: "পিএইচসি ভুবনেশ্বর উত্তর",
+    ta: "பிஎச்சி புவனேஸ்வர் வடக்கு",
+    kn: "ಪಿಎಚ್‌ಸಿ ಭುವನೇಶ್ವರ ಉತ್ತರ",
+    pa: "ਪੀਐਚਸੀ ਭੁਵਨੇਸ਼ਵਰ ਉੱਤਰ",
+    as: "পিএইচচি ভুবনেশ্বৰ উত্তৰ"
+  },
+  "PHC Jatni": {
+    hi: "पीएचसी जटनी",
+    or: "ପିଏଚସି ଜଟଣୀ",
+    te: "పిహెచ్‌సి జట్నీ",
+    mr: "पीएचसी जटनी",
+    bn: "পিএইচসি জটনি",
+    ta: "பிஎச்சி ஜட்னி",
+    kn: "ಪಿಎಚ್‌ಸಿ ಜಟ್ನಿ",
+    pa: "ਪੀਐਚਸੀ ਜਟਨੀ",
+    as: "পিএইচচি জটনী"
+  },
+  "CHC Khordha": {
+    hi: "सीएचसी खोर्धा",
+    or: "ସିଏଚସି ଖୋର୍ଦ୍ଧା",
+    te: "సిహెచ్‌సి ఖోర్ధా",
+    mr: "सीएचसी खोर्धा",
+    bn: "সিএইচসি খোর্ধা",
+    ta: "சிஎச்சி கோர்தா",
+    kn: "ಸಿಎಚ್‌ಸಿ ఖోర్ధా",
+    pa: "ਸੀਐਚਸੀ ਖੋਰਧਾ",
+    as: "চিএইচচি খোৰ্ধা"
+  },
+  "PHC Bolagarh": {
+    hi: "पीएचसी बोलगढ़",
+    or: "ପିଏଚସି ବୋଲଗଡ଼",
+    te: "పిహెచ్‌సి బోలాగఢ్",
+    mr: "पीएचसी बोलगड",
+    bn: "পিএইচসি বোলগড়",
+    ta: "பிஎச்சி போலகர்",
+    kn: "ಪಿಎಚ್‌ಸಿ ಬೋಲಗಢ",
+    pa: "ਪੀਐਚਸੀ ਬੋਲਾਗੜ੍ਹ",
+    as: "পিএইচচি বোলাগড়"
+  },
+  "PHC Tangi": {
+    hi: "पीएचसी टांगी",
+    or: "ପିଏଚସି ଟାଙ୍ଗୀ",
+    te: "పిహెచ్‌సి టాంగీ",
+    mr: "पीएचसी टांगी",
+    bn: "পিএইচসি টাঙ্গি",
+    ta: "பிஎச்சி டாங்கி",
+    kn: "ಪಿಎಚ್‌ಸಿ ಟಾಂಗಿ",
+    pa: "ਪੀਐਚਸੀ ਟਾਂਗੀ",
+    as: "পিএইচচি টাংগী"
+  },
+  "CHC Balugaon": {
+    hi: "सीएचसी बालूगांव",
+    or: "ସିଏଚସି ବାଲୁଗାଁ",
+    te: "సిహెచ్‌సి బాలుగావ్",
+    mr: "सीएचसी बालुगाव",
+    bn: "সিএইচসি বালুগাঁও",
+    ta: "சிஎச்சி பாலகான்",
+    kn: "ಸಿಎಚ್‌ಸಿ ಬಾಲುಗಾಂವ್",
+    pa: "ਸੀਐਚਸੀ ਬਾਲੂਗਾਓਂ",
+    as: "চিএইচচি বালুগাঁও"
+  },
+  "PHC Banapur": {
+    hi: "पीएचसी बाणपुर",
+    or: "ପିଏଚସି ବାଣପୁର",
+    te: "పిహెచ్‌సి బాణాపూర్",
+    mr: "पीएचसी बाणपूर",
+    bn: "পিএইচসি বাণপুর",
+    ta: "பிஎச்சி பாணபூர்",
+    kn: "ಪಿಎಚ್‌ಸಿ ಬಾಣಾಪುರ",
+    pa: "ਪੀਐਚਸੀ ਬਾਣਪੁਰ",
+    as: "পিএইচচি বাণপুৰ"
+  },
+  "CHC Begunia": {
+    hi: "सीएचसी बेगुनिया",
+    or: "ସିଏଚସି ବେଗୁନିଆ",
+    te: "సిహెచ్‌సి బెగునియా",
+    mr: "सीएचसी बेगुनिया",
+    bn: "সিএইচসি বেগুনিয়া",
+    ta: "சிஎச்சி பெகுنیا",
+    kn: "ಸಿಎಚ್‌ಸಿ ಬೇಗುನಿಯಾ",
+    pa: "ਸੀਐਚਸੀ ਬੇਗੂਨੀਆ",
+    as: "চিএইচচি বেগুনীয়া"
+  },
+  "PHC Delang": {
+    hi: "पीएचसी डेलांग",
+    or: "ପିଏଚସି ଡେଲାଙ୍ଗ",
+    te: "పిహెచ్‌సి డేలాంగ్",
+    mr: "पीएचसी डेलांग",
+    bn: "পিএইচसी ডেলাং",
+    ta: "பிஎச்சி டெலாங்",
+    kn: "ಪಿಎಚ್‌ಸಿ ಡೇಲಾಂಗ್",
+    pa: "ਪੀਐਚਸੀ ਡੇਲਾਂग",
+    as: "পিএইচচি ডেলাং"
+  },
+  "PHC Chilika": {
+    hi: "पीएचसी चिल्का",
+    or: "ପିଏଚସି ଚିଲିକା",
+    te: "పిహెచ్‌సి చిలికా",
+    mr: "पीएचसी चिल्का",
+    bn: "পিএইচसी চিলিকা",
+    ta: "பிஎச்சி சிலிகா",
+    kn: "ಪಿಎಚ್‌ಸಿ ಚಿಲಿಕಾ",
+    pa: "ਪੀਐਚਸੀ ਚਿਲਿਕਾ",
+    as: "পিএইচচি চিলিকা"
+  },
+  "PHC Mendhasal": {
+    hi: "पीएचसी मेंधासाल",
+    or: "ପିଏଚସି ମେଣ୍ଢାଶାଳ",
+    te: "పిహెచ్‌సి మెంధాసాల్",
+    mr: "पीएचसी मेंधासाल",
+    bn: "পিএইচसी মেন্ধাশাল",
+    ta: "பிஎச்சி மெந்தசால்",
+    kn: "ಪಿಎಚ್‌ಸಿ ಮೆಂಧಾಸಾಲ್",
+    pa: "ਪੀਐਚਸੀ ਮੇਂਢਾਸਾਲ",
+    as: "পিএইচচি মেণ্ধাশাল"
+  },
+  "PHC Kuhudi": {
+    hi: "पीएचसी कुहुडी",
+    or: "ପିଏଚସି କୁହୁଡ଼ି",
+    te: "పిహెచ్‌సి కుహుడి",
+    mr: "पीएचसी कुहुडी",
+    bn: "পিএইচसी कुहुडी",
+    ta: "பிஎச்சி குஹுடி",
+    kn: "ಪಿಎಚ್‌ಸಿ ಕುಹುಡಿ",
+    pa: "ਪੀਐਚਸੀ ਕੁਹੂਡੀ",
+    as: "পিএইচচি কুহুডি"
+  }
+};
+
+// Map of Medicine/Drug names across all 10 supported languages
+const drugTranslations: Record<string, Record<string, string>> = {
+  "Paracetamol": {
+    hi: "पैरासिटामोल",
+    or: "ପାରାସିଟାମୋଲ",
+    te: "పారాసిటమాల్",
+    mr: "पॅरासिटामॉल",
+    bn: "প্যারাসিটামল",
+    ta: "பாராசிட்டமால்",
+    kn: "ಪ್ಯಾರಸಿಟಮಾಲ್",
+    pa: "ਪੈਰਾਸੀਟਾਮੋਲ",
+    as: "পেৰাচিটামল"
+  },
+  "ORS": {
+    hi: "ओआरएस (ORS)",
+    or: "ଓଆରଏସ (ORS)",
+    te: "ఓఆర్ఎస్ (ORS)",
+    mr: "ओआरएस (ORS)",
+    bn: "ওআরএস (ORS)",
+    ta: "ஓஆர்எஸ் (ORS)",
+    kn: "ಒಆರ್‌ಎಸ್ (ORS)",
+    pa: "ਓਆਰਐస్ (ORS)",
+    as: "ওআৰএছ (ORS)"
+  },
+  "Amoxicillin": {
+    hi: "अमोक्सिसिलिन",
+    or: "ଆମୋକ୍ସିସିଲିନ୍",
+    te: "అమోక్సిసిలిన్",
+    mr: "अमोक्सिसिलिन",
+    bn: "অ্যামোক্সিসিলিন",
+    ta: "அமோக்சிசிலின்",
+    kn: "ಅಮೋಕ್ಸಿಸಿಲಿನ್",
+    pa: "ਅਮੋਕਸੀਸਿਲਿਨ",
+    as: "এমোক্সিচিলিন"
+  },
+  "Iron Tablets": {
+    hi: "आयरन की गोलियां",
+    or: "ଲୁହା ବଟିକା",
+    te: "ఇనుప మాత్రలు",
+    mr: "लोह गोळ्या",
+    bn: "আয়রন ট্যাবলেট",
+    ta: "இரும்பு மாத்திரைகள்",
+    kn: "ಕಬ್ಬಿಣದ ಮಾತ್ರೆಗಳು",
+    pa: "ਲੋਹੇ ਦੀਆਂ ਗੋਲੀਆਂ",
+    as: "আইৰণ টেবলেট"
+  },
+  "OCP": {
+    hi: "ओसीपी (गर्भनिरोधक गोलियां)",
+    or: "ଓସିପି ବଟିକା",
+    te: "ఓసిపి మాత్రలు",
+    mr: "ओसीपी गोळ्या",
+    bn: "ওসিপি পিল",
+    ta: "ஓசிபி மாத்திரைகள்",
+    kn: "ಒಸಿಪಿ ಮಾತ್ರೆಗಳು",
+    pa: "ਓਸੀਪੀ ਗੋਲੀਆਂ",
+    as: "অ’চিপি টেবলেট"
+  },
+  "Metronidazole": {
+    hi: "मेट्रोनिडाजोल",
+    or: "ମେଟ୍ରୋନିଡାଜୋଲ",
+    te: "మెట్రోనిడాజోల్",
+    mr: "मेट्रोनिडाझोल",
+    bn: "মেট্রোনিডাজল",
+    ta: "மெட்ரானிடசோல்",
+    kn: "ಮೆಟ್ರೋನಿಡಜೋಲ್",
+    pa: "ਮੈਟਰোਨੀਡਾਜ਼ੋल",
+    as: "মেট্ৰ’নিডাজল"
+  },
+  "Chloroquine": {
+    hi: "क्लोरोक्विन",
+    or: "କ୍ଲୋରୋକୁଇନ୍",
+    te: "క్లోరోక్విన్",
+    mr: "क्लोरोक्विन",
+    bn: "ক্লোরোকুইন",
+    ta: "குளோரோகுயின்",
+    kn: "ಕ್ಲೋರೋಕ್ವಿನ್",
+    pa: "ਕਲੋਰੋਕੁਈਨ",
+    as: "ক্ল’ৰ’कুইন"
+  },
+  "Malaria RDT Kit": {
+    hi: "मलेरिया आरडीटी किट (Malaria RDT Kit)",
+    or: "ମ୍ୟାଲେରିଆ RDT କିଟ୍",
+    te: "మలేరియా RDT కిట్",
+    mr: "मलेरिया आरडीटी किट",
+    bn: "ম্যালেরিয়া আরডিটি কিট",
+    ta: "மலேரியா ஆர்டிடி கிட்",
+    kn: "ಮಲೇರಿಯಾ ಆರ್‌ಡಿಟಿ ಕಿಟ್",
+    pa: "ਮਲੇਰੀਆ ਆਰਡੀਟੀ ਕਿੱਟ",
+    as: "মেলেৰিয়া আৰডিটি কিট"
+  },
+  "Pregnancy Test Kit": {
+    hi: "गर्भावस्था परीक्षण किट (Pregnancy Test Kit)",
+    or: "ଗର୍ଭାବସ୍ଥା ପରୀକ୍ଷା କିଟ୍",
+    te: "గర్భధారణ పరీక్ష కిట్",
+    mr: "गर्भधारणा चाचणी किट",
+    bn: "প্রেগন্যান্সি টেস্ট কিট",
+    ta: "கர்ப்ப பரிசோதனை கிట్",
+    kn: "ಗರ್ಭಧಾರಣೆ ಪರೀಕ್ಷಾ ಕಿಟ್",
+    pa: "ਗਰਭ ਅਵਸਥა ਟੈਸਟ ਕਿੱਟ",
+    as: "গৰ্ভධාৰণ পৰীক্ষা কিট"
+  },
+  "Dengue NS1 Kit": {
+    hi: "डेंगू एनएस1 किट (Dengue NS1 Kit)",
+    or: "ଡେଙ୍ଗୁ NS1 କିଟ୍",
+    te: "డెంగ్యూ NS1 కిట్",
+    mr: "डेंग्यू एनएस1 किट",
+    bn: "ডেঙ্গু এনএস১ কিট",
+    ta: "டெங்கு என்எஸ்1 கிட்",
+    kn: "ಡೆಂಗ್ಯೂ ఎన్‌ఎస్1 కిట్",
+    pa: "ਡੈਂਗੂ ਐਨਐਸ1 ਕਿੱਟ",
+    as: "ডেংগু এনএছ১ কিট"
+  },
+  "Cotrimoxazole": {
+    hi: "कोट्रीमोक्साजोल",
+    or: "କୋଟ୍ରିମୋକ୍ସାଜୋଲ",
+    te: "కోట్రిమోక్సాజోల్",
+    mr: "कोट्रीमोक्साझोल",
+    bn: "কোট্রাইমোক্সাজল",
+    ta: "கோட்ரிமோக்சசோல்",
+    kn: "ಕೋಟ್ರಿಮೋಕ್ಸಜೋಲ್",
+    pa: "ਕੋਟ੍ਰੀਮੋਕਸਾਜ਼ੋਲ",
+    as: "ক’ট্ৰিম’ক্সাজল"
+  }
+};
+
+// Localize Facility Center Names
+export function getLocalizedCenterName(name: string, lang: string): string {
+  if (!name || lang === "en") return name;
+  const entry = centerTranslations[name];
+  return entry ? (entry[lang] || name) : name;
+}
+
+// Localize Drug/Medicine Names
+export function getLocalizedDrugName(drug: string, lang: string): string {
+  if (!drug || lang === "en") return drug;
+  const entry = drugTranslations[drug];
+  return entry ? (entry[lang] || drug) : drug;
+}
+
+// Localize Status Messages and Telemetry Alerts
+export function getLocalizedAlert(msg: string, lang: string): string {
+  if (!msg) return msg;
+  if (lang === "en") return msg;
+  
+  const cleanMsg = msg.trim();
+
+  if (cleanMsg.includes("Medical Officer absent today")) {
+    const translations: Record<string, string> = {
+      hi: "चिकित्सा अधिकारी आज अनुपस्थित हैं",
+      or: "ମେଡିକାଲ ଅଫିସର ଆଜି ଅନୁପସ୍ଥିତ ଅଛନ୍ତି",
+      te: "వైద్యాధికారి ఈరోజు హాజరు కాలేదు",
+      mr: "वैद्यकीय अधिकारी आज गैरहजर आहेत",
+      bn: "মেডিকেল অফিসার আজ অনুপস্থিত",
+      ta: "மருத்துவ அதிகாரி இன்று வரவில்லை",
+      kn: "ವೈದ್ಯಾಧಿಕಾರಿಗಳು ಇಂದು ಗೈರುಹಾಜರಾಗಿದ್ದಾರೆ",
+      pa: "ਮੈਡੀకਲ ਅਫਸर ਅੱਜ ਗੈਰ-ਹਾਜ਼ਰ ਹਨ",
+      as: "চিকিৎসা বিষয়া আজি অনুপস্থিত"
+    };
+    return translations[lang] || msg;
+  }
+
+  if (cleanMsg.includes("Low stock multiple critical medicines")) {
+    const translations: Record<string, string> = {
+      hi: "कई महत्वपूर्ण दवाओं का कम स्टॉक है",
+      or: "ଏକାଧିକ ଜରୁରୀକାଳୀନ ଔଷଧର ସ୍ୱଳ୍ପ ମହଜୁଦ",
+      te: "పలు కీలక మందుల నిల్వలు తక్కువగా ఉన్నాయి",
+      mr: "अनेक गंभीर औषधांचा साठा कमी आहे",
+      bn: "একাধিক গুরুত্বপূর্ণ ওষুধের কম স্টক রয়েছে",
+      ta: "பல முக்கியமான மருந்துகளின் இருப்பு குறைவாக உள்ளது",
+      kn: "ಹಲವು ಪ್ರಮುಖ ಔಷಧಿಗಳ ದಾಸ್ತಾನು ಕಡಿಮೆಯಾಗಿದೆ",
+      pa: "ਕਈ ਮਹੱਤਵਪੂਰਨ ਦਵਾਈਆਂ ਦਾ ਸਟਾਕ ਘੱଟ ਹੈ",
+      as: "একাধিক গুৰুত্বপূৰ্ণ ঔষধৰ কম স্টক আছে"
+    };
+    return translations[lang] || msg;
+  }
+
+  if (cleanMsg.includes("Bed occupancy high")) {
+    const pctMatch = cleanMsg.match(/\d+%/)?.[0] || "";
+    const pct = pctMatch ? ` (${pctMatch})` : "";
+    const translations: Record<string, string> = {
+      hi: `बिस्तरों का उच्च अधिभोग स्तर${pct}`,
+      or: `ଉଚ୍ଚ ଶଯ୍ୟା ବ୍ୟବହାର${pct}`,
+      te: `బెడ్ల ఆక్యుపెన్సీ ఎక్కువగా ఉంది${pct}`,
+      mr: `खाटांचे प्रमाण जास्त आहे${pct}`,
+      bn: `উচ্চ শয্যা ব্যবহার${pct}`,
+      ta: `அதிக படுக்கை பயன்பாடு${pct}`,
+      kn: `ಹೆಚ್ಚಿನ ಬೆಡ್ ಆಕ್ಯುಪೆನ್ಸಿ${pct}`,
+      pa: `ਬਿਸਤਰਿਆਂ ਦੀ ਉੱਚ ਵਰਤੋਂ${pct}`,
+      as: `উচ্চ শয্যা ব্যৱহাৰ${pct}`
+    };
+    return translations[lang] || msg;
+  }
+
+  if (cleanMsg.includes("ORS stock out in")) {
+    const days = cleanMsg.match(/\d+/)?.[0] || "2";
+    const translations: Record<string, string> = {
+      hi: `${days} दिनों में ओआरएस (ORS) स्टॉक समाप्त होने वाला है`,
+      or: `${days} ଦିନରେ ଓଆରଏସ (ORS) ଷ୍ଟକ୍ ଶେଷ ହେବାକୁ ଯାଉଛି`,
+      te: `ఓఆర్ఎస్ (ORS) స్టాక్ రాబోయే ${days} రోజుల్లో అయిపోతుంది`,
+      mr: `${days} दिवसांत ओआरएस (ORS) साठा संपणार आहे`,
+      bn: `${days} দিনের মধ্যে ওআরএস (ORS) স্টক ফুরিয়ে যাবে`,
+      ta: `${days} நாட்களில் ஓஆர்எஸ் (ORS) இருப்பு முடிவடையும்`,
+      kn: `${days} ದಿನಗಳಲ್ಲಿ ಒಆರ್‌ಎಸ್ (ORS) ಸ್ಟಾಕ್ ಖಾಲಿಯಾಗುತ್ತದೆ`,
+      pa: `${days} ਦਿਨਾਂ ਵਿੱਚ ਓਆਰਐਸ (ORS) ਸਟਾਕ ਖਤਮ ਹੋ ਜਾਵੇਗਾ`,
+      as: `${days} দিনত ওআৰএছ (ORS) স্টক শেষ হ’ব`
+    };
+    return translations[lang] || msg;
+  }
+  if (cleanMsg.includes("Medical Officer absent")) {
+    const days = cleanMsg.match(/\d+/)?.[0] || "3";
+    const translations: Record<string, string> = {
+      hi: `चिकित्सा अधिकारी लगातार ${days} दिनों से अनुपस्थित हैं`,
+      or: `ଡାକ୍ତର ଲଗାତାର ${days} ଦିନ ଧରି ଅନୁପସ୍ଥିତ ଅଛନ୍ତି`,
+      te: `మెడికల్ ఆఫీసర్ వరుసగా ${days} రోజులుగా హాజరు కాలేదు`,
+      mr: `वैद्यकीय अधिकारी सलग ${days} दिवस गैरहजर आहेत`,
+      bn: `মেডিকেল অফিসার টানা ${days} দিন ধরে অনুপস্থিত`,
+      ta: `மருத்துவ அதிகாரி தொடர்ந்து ${days} நாட்களாக வரவில்லை`,
+      kn: `ವೈದ್ಯಾಧಿಕಾರಿಗಳು ಸತत ${days} ದಿನಗಳಿಂದ ಗೈರುಹಾజರಾಗಿದ್ದಾರೆ`,
+      pa: `ਮੈਡੀਕਲ ਅਫਸਰ ਲਗਾਤਾਰ ${days} ਦਿਨਾਂ ਤੋਂ ਗੈਰ-ਹਾਜ਼ਰ ਹਨ`,
+      as: `চিকিৎসা বিষয়া ধাৰাবাহিকভাৱে ${days} দিন অনুপস্থিত`
+    };
+    return translations[lang] || msg;
+  }
+  if (cleanMsg.includes("Bed occupancy at 90%")) {
+    const translations: Record<string, string> = {
+      hi: "बिस्तरों की संख्या ९०% क्षमता सीमा पर है",
+      or: "ଶଯ୍ୟା ସଂଖ୍ୟା ୯୦% କ୍ଷମତା ସୀମାରେ ପହଞ୍ଚିଛି",
+      te: "బెడ్ ఆక్యుపెన్సీ 90% సామర్థ్యానికి చేరుకుంది",
+      mr: "खाटांची संख्या ९०% क्षमतेवर पोहोचली आहे",
+      bn: "শয্যা সংখ্যা ৯০% ধারণক্ষমতা সীমায় রয়েছে",
+      ta: "படுக்கை பயன்பாடு 90% கொள்ளளவை எட்டியுள்ளது",
+      kn: "ಬೆಡ್ ಆಕ್ಯುపెನ್ಸಿ 90% ಸಾಮರ್ಥ್ಯದಲ್ಲಿದೆ",
+      pa: "ਬਿਸਤਰਿਆਂ ਦੀ ਵਰਤੋਂ 90% ਸਮਰੱਥਾ 'ਤੇ ਹੈ",
+      as: "শয্যা ব্যৱহাৰ ৯০% ক্ষমতা সীমাত আছে"
+    };
+    return translations[lang] || msg;
+  }
+  if (cleanMsg.includes("Paracetamol stock out")) {
+    const translations: Record<string, string> = {
+      hi: "पैरासिटामोल स्टॉक जल्द समाप्त होने वाला है",
+      or: "ପାରାସିଟାମୋଲ ଷ୍ଟକ୍ ଶୀଘ୍ର ଶେଷ ହେବାକୁ ଯାଉଛି",
+      te: "పారాసిటమాల్ స్టాక్ త్వరలో అయిపోతుంది",
+      mr: "पॅरासिटामॉल साठा लवकरच संपणार आहे",
+      bn: "প্যারাসิตামল स्टॉक শীঘ্রই ফুরিয়ে যাবে",
+      ta: "பாரசிட்டமால் இருப்பு விரைவில் முடிவடையும்",
+      kn: "ಪ್ಯಾರಸಿಟಮಾಲ್ ಸ್ಟಾಕ್ ಶೀಘ್ರದಲ್ಲೇ ಖಾಲಿಯಾಗುತ್ತದೆ",
+      pa: "ਪੈਰਾਸੀਟਾਮੋਲ ਸਟਾਕ ਜਲਦੀ ਖਤਮ ਹੋਣ ਵਾਲਾ ਹੈ",
+      as: "পেৰাচিটামল স্টক সোনকালে শেষ হ’ব"
+    };
+    return translations[lang] || msg;
+  }
+  if (cleanMsg.includes("reserves reached a critical safety floor")) {
+    const translations: Record<string, string> = {
+      hi: "पैरासिटामोल भंडार १५० इकाइयों के महत्वपूर्ण स्तर पर पहुंच गया है।",
+      or: "ପାରାସିଟାମୋଲ ଭଣ୍ଡାର ୧୫୦ ୟୁନିଟ୍ ର ଗୁରୁତର ସ୍ତରରେ ପହଞ୍ଚିଛି।",
+      te: "పారాసిటమాల్ నిల్వలు 150 యూనిట్ల క్లిష్టమైన భద్రతా స్థాయికి చేరుకున్నాయి.",
+      mr: "पॅरासिटामॉल साठा १५० युनिट्सच्या गंभीर पातळीवर पोहोचला आहे.",
+      bn: "প্যারাসিটামল স্টক ১৫০ ইউনিটের ঝুঁকিপূর্ণ স্তরে নেমে এসেছে।",
+      ta: "பாராசிட்டமால் இருப்பு 150 அலகுகள் என்ற முக்கியமான நிலையை எட்டியுள்ளது.",
+      kn: "ಪ್ಯಾರಸಿಟಮಾಲ್ ನಿಲ್ಸಗಳು 150 ಯುನಿಟ್‌ಗಳ ನಿರ್ಣಾಯಕ ಮಟ್ಟಕ್ಕೆ ತಲುಪಿವೆ.",
+      pa: "ਪੈਰਾਸੀਟਾਮੋਲ ਭੰਡਾਰ 150 ਇਕਾਈਆਂ ਦੇ ਗੰਭੀਰ ਪੱਧਰ 'ਤੇ ਪਹੁੰଚ ਗਿਆ ਹੈ।",
+      as: "পেৰাচিটামল ভাণ্ডাৰ ১৫০ ইউনিটৰ গুৰুতৰ স্তৰত উপনীত হৈছে।"
+    };
+    return translations[lang] || msg;
+  }
+  if (cleanMsg.includes("failed to synchronize")) {
+    const translations: Record<string, string> = {
+      hi: "लगातार २ दिनों से दैनिक रिपोर्ट सिंक्रनाइज़ करने में विफल।",
+      or: "ଲଗାତାର ୨ ଦିନ ଧରି ଦୈନିକ ରିପୋର୍ଟ ସିଙ୍କ୍ରୋନାଇଜ୍ କରିବାରେ ବିଫଳ।",
+      te: "వరుసగా 2 రోజులుగా రోజువారీ రిపోర్ట్‌లను సమకాలీకరించడంలో విఫలమైంది.",
+      mr: "सलग २ दिवस दैनिक अहवाल सिंक करण्यात अपयशी.",
+      bn: "টানা ২ দিন ধরে দৈনিক রিপোর্ট সিঙ্ক করতে ব্যর্থ।",
+      ta: "தொடர்ந்து 2 நாட்களாக தினசரி அறிக்கையை ஒத்திசைக்கத் தவறிவிட்டது.",
+      kn: "ಸತತ 2 ದಿನಗಳಿಂದ ದೈನಂದಿನ ವರದಿಯನ್ನು ಸಿಂಕ್ ಮಾಡಲು విఫలವಾಗಿದೆ.",
+      pa: "ਲਗਾਤਾਰ 2 ਦਿਨਾਂ ਤੋਂ ਰੋਜ਼ਾਨਾ ਰਿਪੋਰਟ ਸਿੰਕ ਕਰਨ ਵਿੱਚ ਅਸਫਲ।",
+      as: "ধাৰাবাহিকভাৱে ২ দিন দৈনিক প্ৰতিবেদন ছিংক কৰাত ব্যৰ্থ।"
+    };
+    return translations[lang] || msg;
+  }
+  if (cleanMsg.includes("Normal Operations")) {
+    const translations: Record<string, string> = {
+      hi: "सामान्य संचालन",
+      or: "ସାଧାରଣ କାର୍ଯ୍ୟ",
+      te: "సాధారణ కార్యకలాపాలు",
+      mr: "सामान्य कामकाज",
+      bn: "স্বাভাবিক কার্যক্রম",
+      ta: "சாதாரண செயல்பாடுகள்",
+      kn: "ಸಾಮಾನ್ಯ ಕಾರ್ಯಾಚರಣೆಗಳು",
+      pa: "ਆਮ ਕੰਮਕਾਜ",
+      as: "স্বাভাৱিক কাম-কাজ"
+    };
+    return translations[lang] || msg;
+  }
+  
+  return msg;
+}

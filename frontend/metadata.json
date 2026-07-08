@@ -1,0 +1,6 @@
+{
+  "name": "Swasthya Setu",
+  "description": "District Health Command Center for the Government of India, monitoring Primary and Community Health Centers (PHCs/CHCs) in real time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

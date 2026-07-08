@@ -1,0 +1,15 @@
+.env
+firebase-key.json
+__pycache__/
+venv/
+node_modules/
+.DS_Store
+*.pyc
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example

@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Local Credentials and Environments
+.env
+.env.local
+firebase-key.json
+
+# Builds & Outputs
+dist/
+build/
+.DS_Store
