@@ -253,6 +253,7 @@ Frontend runs at `http://localhost:3000`
 ```
 Email:    admin@swasthyasetu.gov.in
 Password: admin123
+Deployed Link: https://swasthya-setu-alchemystic.netlify.app
 ```
 
 ---
