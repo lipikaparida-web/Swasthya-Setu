@@ -368,3 +368,5 @@ Track 3: Smart Health — AI-Driven Health Centre & Supply Chain Management
 Powered by Sarvam AI & Firebase • Khordha District, Odisha
 
 </div>
+<p align="center"> <strong>SWASTHYA SETU</strong><br> See risks earlier. Move resources smarter. Intervene where it matters most. </p> 
+
